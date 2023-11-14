@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elementos FIGURE e FIGCAPTION HTmL</title>
+   <style>
+      p {
+         width: 500px;
+         text-align: justify;
+
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Elementos FIGURE e FIGCAPTION Html</h1>
+   </header>
+
+   <main>
+      
+      <h2>Exemplo 01 imagem</h2>
+      <p>
+         <strong>Figcaption</strong> - esse elemento destina-se a marcar uma legenda para o conteúdo inserido com uso do elemento <strong>figure</strong> e deve constar da marcação como elemento-filho do elemento <strong>figure</strong>.
+      </p>
+      <figure>
+         <img src="/codigos/cap_02/copacabana.jpg" alt="Vista da praia de copacabana, Posto 6.">
+         <figcaption>
+            <mark>Copacabana a eterna princisinha do mar.</mark>
+         </figcaption>
+      </figure>
+      <hr>
+      
+      <h2>Exemplo 02 poema</h2>
+      <p>Pode ser usado para marca parte de um poema.</p>
+      <figure>
+         <p>
+            meu canto de morte. <br>
+            Guerreiros, ouvi. <br>
+            Sou filhos da selva, <br>
+            Nas selvas creci; <br>
+            Guerreiros, descendo <br>
+            Da tribo tupi.</p>
+            <figcaption>
+               <cite><mark>I - Juca Pirama</mark></cite> 1<sup>0.</sup> Verso do IV canto do poema épico de Gonsalves Dias.
+            </figcaption>
+      </figure>
+
+      <h2>Exemplo 03 trecho de código</h2>
+      <p>
+         Pode ser usado também para marcar par de um código.
+      </p>
+
+      <figure>
+         <figcaption><mark>Regras CSS para estilização do elemento Html.</mark></figcaption>
+         <pre>
+            <code>
+               h1 {
+                  fonte: italic 22px sans-serif;
+                  color: red;
+                  text-align: center;
+               }</code></pre>
+      </figure>
+
+   </main>
+</body>
+</html>
