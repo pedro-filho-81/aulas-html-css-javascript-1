@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+header {
+   background-color: #ccc;
+   color: red;
+   text-align: center;
+   border: 2px solid black;
+   margin: 0 auto;
+}
+
+#fundo-controle {
+   background-color: #555321;
+   color: blue;
+   padding: 15px;
+}
+input {
+   width: 70px;
+   padding: 8px;
+   margin-left: 5%;
+}
