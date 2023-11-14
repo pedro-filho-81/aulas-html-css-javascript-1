@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O elemento DETAILS Html</title>
+   <style>
+      p {
+         width: 500px;
+         text-align: justify;
+      }
+      pre {
+         font-size: 16px;
+      }
+      summary {
+         text-decoration:underline;
+         color:red;
+      }
+      summary:hover {
+         text-decoration:none;
+         cursor:pointer;
+      }
+      dl {
+         border:1px solid #ccc;
+         padding:5px 10px;
+         width:400px;
+         background:rgba(220, 255, 170, 0.667);
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>O Elemento DETAILS & SUMMARY Html</h1>
+   </header>
+
+   <main>
+      <h2>O Elemento DETAILS Html</h2>
+      <p>
+         O elemento DETAILS destina-se a fornecer informações textuais ou controles de formulário adicionais sobre determinada página ou sobre um conteúdo específico da página.
+      </p>
+
+      <h2>O Elemento SUMMARY Html</h2>
+      <p>
+         O elemento SUMMARY foi criado para uso em conjunto com o elemento details e destina-se a fornecer um rótulo ou breve sumário das informações adicionais fornecidas por details.
+      </p>
+
+      <h3>Exemplo Html</h3><p>
+         clicando na seta o elemento Mostra ou oculta o conteúdo adicional
+      </p>
+
+      <details>
+         <summary><mark>Livros Html, Css e JavaScript do Maujo</mark></summary> // clicando esse elemento Mostra ou oculta o conteúdo adicional
+         <dl>
+            <dt>Construindo sites coM CSS e (x)HtMl </dt>
+               <dd>Ano: 2007</dd>
+               <dd>Página: 438</dd>
+            <dt>JQuery - A biblioteca do prograMador JavaScript</dt>
+               <dd>Ano: 2008</dd>
+               <dd>Pátinas: 543</dd>
+            <dt>Ajax com JQuery - Requisições Ajax com a simplicidade do JQuery</dt>
+               <dd>Ano: 200*</dd>
+               <dd>Pátinas: 327</dd>
+            <dt>JavaScript - Guia do Programador</dt>
+               <dd>Ano: 2010</dd>
+               <dd>Pátinas: 604</dd>
+         </dl>
+      </details>
+
+      <pre>
+       &lt;p>
+         clicando na seta o elemento Mostra ou oculta o conteúdo adicional
+      &lt;/p>
+
+      <strong>&lt;details></strong>
+         <strong>&lt;summary></strong>Livros Html e JavaScript do Maujor<strong>&lt;/summary></strong> // clicando esse elemento Mostra ou oculta o conteúdo adicional
+         &lt;dl>
+            &lt;dt>Construindo sites coM CSS e (x)HtMl &lt;/dt>
+               &lt;dd>Ano: 2007&lt;/dd>
+               &lt;dd>Página: 438&lt;/dd>
+            &lt;dt>JQuery - A biblioteca do prograMador JavaScript&lt;/dt>
+                  &lt;dd>Ano: 2008&lt;/dd>
+                  &lt;dd>Pátinas: 543&lt;/dd>
+            &lt;dt>Ajax com JQuery - Requisições Ajax com a simplicidade do JQuery/dt>
+                  &lt;dd>Ano: 200*&lt;/dd>
+                  &lt;dd>Pátinas: 327&lt;/dd>
+            &lt;dt>JavaScript - Guia do Programador&lt;/dt>
+                  &lt;dd>Ano: 2010&lt;/dd>
+                  &lt;dd>Pátinas: 604&lt;/dd>
+         &lt;/dl>
+      <strong>&lt;/details></strong></pre>
+      
+   </main>
+   <hr>
+
+   <footer>
+
+   </footer>
+</body>
+</html>
