@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elemento Html Áudio</title>
+   <style>
+      body {
+         margin: 0 auto;
+      }
+      h1, h2, h3, h4 {
+         margin-left: 20px;
+      }
+      p {
+         text-align: justify;
+         width: 400px;
+         font-size: 1.3em;
+         margin-left: 20px;
+      }
+      pre {
+         width: 400px;
+         font-size:20px;
+      }
+   </style>
+</head>
+<body>
+   <h1>Elemento Html Áudio</h1>
+   <p>
+      O elemento ÁUDIO destina-se a incorporar um som ou um STREAm de áudio
+   </p>
+
+   <p>
+      O elemento <strong>audio</strong> admite como elemento-filho o elemento <strong>source</strong> cuja finalidade é substituir o atributo <strong>src</strong> e permitir formatos alternativos para o som.
+   </p>
+   
+   <hr>
+
+   <h2>Exemplo 1 o elemento <mark>audio</mark></h2>
+
+   <p>Sintax: elemento AUDIO, O atributo SRC e entre aspas o endereço onde se encontra o audio.</p>
+   
+   <audio src="/codigos/cap_03/som.mp3"></audio>
+
+   <pre>
+      &lt;audio src="/codigos/cap_03/som.mp3">
+      &lt;/audio>
+   </pre>
+   <hr>
+
+   <h2>Exemplo 2 o elemento <mark>audio</mark> e o elemento <mark>source</mark></h2>
+   
+   <p>
+      O elemento <strong>source</strong> admite os seguintes atributos  globais: <strong>src, type, e media</strong>.
+   </p>
+   
+   <p>
+      O atributo <strong>( src )</strong> aponta para o endereço do arquivo de som, <strong>( type )</strong> Informa ao navegador o tipo de mídia a ser incorporado, <strong>( media )</strong> Informa ao navegador o tipo de mídia. 
+   </p>
+
+   <pre>
+   <strong>&lt;audio></strong>
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.ogg" 
+         type="audio/ogg" 
+         codecs="vorbis" 
+         media="screen">
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.mp3" 
+         type="audio/mpeg" 
+         codecs="mp3" 
+         media="screen">
+         &lt;!--Código (x)Html para inserção 
+         de som.mp3 para flash-->
+   <strong>&lt;/audio></strong>
+   </pre>
+   
+   <audio>
+      <source src="/codigos/cap_03/som.ogg" type="audio/ogg" codecs="vorbis" media="screen">
+      <source src="/codigos/cap_03/som.mp3" type="audio/mpeg" codecs="mp3" media="screen">
+      <!--Código (x)Html para inserção de som.mp3 para flash-->
+   </audio></pre>
+   <hr>
+
+   <h2>Exemplo 3 o elemento <mark>audio</mark> e o atributo <mark>controls</mark></h2>
+   
+   <p>
+      O elemento <strong>audio</strong> admite os seguintes atributos globais: <mark>src, controls, crossorigin, preload, autoplay, mediagroup, loop e muted</mark>.
+   </p>
+   <p>
+      O atributo <mark>controls</mark> destina-se a fazer com que o navegador renderize os controles nativos para o usuário interagir com som.
+   </p>
+
+   <pre>
+   <strong>&lt;audio <mark>controls></mark></strong>
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.ogg" 
+         type="audio/ogg" 
+         codecs="vorbis" 
+         media="screen">
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.mp3" 
+         type="audio/mpeg" 
+         codecs="mp3" 
+         media="screen">
+      &lt;source src="/codigos/cap_03/som.wav" 
+         type="audio/wave">
+      &lt;!--Código (x)Html para inserção 
+      de som.mp3 para flash-->
+      &lt;p>
+         Se seu navegador não suporta o 
+         elemento <strong>audio</strong> Html:5. 
+         Faça &lt;a href="som.mp3">download 
+         do som.mp3&lt;/a>
+      &lt;/p></pre>
+
+      <audio controls>
+         <source src="/codigos/cap_03/som.ogg" type="audio/ogg" codecs="vorbis" media="screen">
+         <source src="/codigos/cap_03/som.mp3" type="audio/mpeg" codecs="mp3" media="screen">
+         <source src="/codigos/cap_03/som.wav" type="audio/wave">
+         <!--Código (x)Html para inserção de som.mp3 para flash-->
+         <p>
+            Seu navegador não suporta  o elemento audio Html:5. <br>Faça <a href="som.mp3">download do som.mp3</a>
+         </p>
+      
+         <source src="/codigos/cap_03/som.wav " type="audio/wave" codecs="wave" media="screen">
+      </audio> <br>
+   <p>
+      Mas, cuidado. Marcação (X) HTML inserida no elemento <mark>audio</mark> <strong>como mostrado anteriormente</strong> não cumpre finalidade de oferecer alternativa textual para o som, pois ela é renderizada somente em navegadores que não suportam o elemento <mark>audio</mark>.
+   </p>
+   
+   <hr>
+
+   <h2>Exemplo 4 o elemento ÁUDIO</h2>
+
+   <h3>E os atributos: <mark>controls, autoplay e loop</mark></h3>
+
+   <p>
+      Os atributos <mark>autoplay e loop</mark> destinam-se respectivamente a iniciar o som automaticamente, tão logo a página seja carregada e a repetir o som indefinidamente. 
+   </p>
+
+   <pre>
+   <strong>&lt;audio <mark>controls autoplay loop></mark></strong>
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.ogg" 
+         type="audio/ogg" 
+         codecs="vorbis" 
+         media="screen">
+      <strong>&lt;source</strong> src="/codigos/cap_03/som.mp3" 
+         type="audio/mpeg" 
+         codecs="mp3" 
+         media="screen">
+      &lt;!--Código (x)Html para inserção 
+      de som.mp3 para flash-->
+      &lt;p>
+         Se seu navegador não suporta 
+         o elemento <strong>audio</strong> Html:5. 
+         Faça &lt;a href="som.mp3">download 
+         do som.mp3&lt;/a>
+      &lt;/p>
+   &lt;/audio></pre>
+
+   <audio controls autoplay loop>
+      <source src="/codigos/cap_03/som.ogg" 
+         type="audio/ogg" 
+         codecs="vorbis" 
+         media="screen">
+      <source src="/codigos/cap_03/som.mp3" 
+         type="audio/mpeg" 
+         codecs="mp3" 
+         media="screen">
+      <!--Código (x)Html para inserção de som.mp3 para flash-->
+      <p>
+         Se seu navegador não suporta o elemento audio Html:5. 
+         Faça <a href="som.mp3">download do som.mp3</a>
+      </p>
+   </audio>
+   <hr>
+   
+</body>
+</html>
