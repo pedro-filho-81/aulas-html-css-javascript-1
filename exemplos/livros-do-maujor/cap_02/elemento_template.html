@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elemento template Html</title>
+</head>
+<body>
+   <header>
+      <h1>Elemento template Html</h1>
+   </header>
+   <template class="lista">
+      
+      <style scoped>
+      ul {margin:0; padding:0; list-style:none;}
+      </style>   
+            
+            <h2 id="tit"></h2>
+               <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+      </template>
+
+      <button id="livro">Mostrar livros</button>
+      <button id="cor">Mostrar cores</button>
+      <div class="box"></div>
+      
+   <script >
+      // arrays
+      var titulo = ['Livros do maujor', 'Cores'];
+      var livro = ['Web Design Responsivo', 'JavaScript', 'Html', 'Css'];
+      var cor = ['Vermelho', 'Verde', 'Azul', 'Amarela'];
+      
+      // variáveis
+      var template = document.querySelector('.lista'); // vincula ao html template
+      var clone = template.content.cloneNode(true); // 
+      var tit = clone.querySelector('#tit');
+      var items = clone.querySelectorAll('li');
+      var botao = document.querySelectorAll('button');
+      
+      // loop for
+      for(var k = 0; k < botao.length; k++) {
+         botao[k].onclick = function() {
+            if(this.id == 'livro') {
+               var itemInserido = livro;
+               tit.textContent = titulo[0]
+            } else {
+               var itemInserido = cor;
+               tit.textContent = titulo[1];
+            }
+               for(var i = 0; i < itemInserido.length; i++) {
+                  items[i].textContent = itemInserido[i];
+               }
+            document.querySelector('.box').appendChild(clone);
+         } //final function
+      } // final for
+   </script>
+</body>
+</html>
