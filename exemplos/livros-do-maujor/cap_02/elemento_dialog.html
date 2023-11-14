@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elemento dialog Html</title>
+   <style>
+      p {
+         font-size: 1.4em;
+         width: 400px;
+         text-align: justify;
+      }
+      pre {
+         font-size: 18px;
+      }
+   </style>
+</head>
+<body>
+   <h1>Elemento dialog Html</h1>
+   <p>
+      Destina-se a criar uma <strong>caixa de diálogo</strong>, uma <strong>caixa de inspeção</strong> ou uma j<strong>anela moda</strong>l de interação com o usuário, e admite o atributo global <mark>open</mark>.
+   </p>
+   <hr>
+
+   <h3>Exemplo dialog Html</h3>
+   <pre>
+   <strong>&lt;dialog></strong>
+      &lt;h3>Janela modal&lt;/h3>
+      &lt;p>Conteúdo da janela modal&lt;/p>
+      &lt;button id="fechar">X&lt;/button>
+   <strong>&lt;/dialog></strong>
+
+   &lt;button id="abrir">Abrir janela modal&lt;/button></pre>
+   <hr>
+
+   <h3>Exemplo JavaScript</h3>
+   <pre>   
+   &lt;script>
+      let janela = document.querySelector('dialog');
+      document.querySelector('#abrir').onclick = 
+      function() { 
+         janela.show(); // abrir a janela modal
+      };
+      document.querySelector('#fechar').onclick = 
+      function() {
+         janela.close(); // fechar a janela modal
+      };
+   &lt;/script></pre>
+   <hr>
+
+   <dialog>
+      <h3>Janela modal</h3>
+      <p>Conteúdo da janela modal</p>
+      <button id="fechar">X</button>
+   </dialog>
+
+   <h3>Resultado do Exemplo acima</h3>
+   
+   <button id="abrir">Abrir janela modal</button>
+
+   <script>
+      let janela = document.querySelector('dialog');
+      document.querySelector('#abrir').onclick = function() { 
+         janela.show(); // abrir a janela modal
+      };
+      document.querySelector('#fechar').onclick = function() {
+         janela.close(); // fechar a janela modal
+      };
+   </script>
+
+</body>
+</html>
