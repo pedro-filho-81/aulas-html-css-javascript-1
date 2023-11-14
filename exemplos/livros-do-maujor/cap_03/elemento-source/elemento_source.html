@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O Elemento SOURCE Html</title>
+   <style>
+      body {
+         font-size: 20px;
+      }
+      header h1, h2, p, section {
+         text-align: center;
+         margin: auto;
+         line-height: 1.6;
+         padding-bottom: 5px;
+      }
+      p {
+         width: 500px;
+         text-align: justify;
+         margin-bottom: 8px;
+      }
+      pre {
+         text-align: justify;
+         width: 500px;
+         font-size: 18px;
+         margin: 0 auto;
+      }
+      span {
+         background-color: rgb(61, 61, 232);
+         color: white;
+         font-weight: bold;
+      }
+      dl {
+         width: 500px;
+         margin: 0 auto;
+      }
+      dt {
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>O Elemento SOURCE Html:5</h1>
+   </header>
+
+   <section>
+      <p>
+         A tag <span>&lt;source></span> é usada para especificar vários recursos de mídia para elementos de mídia, como <span>&lt;video></span> , <span>&lt;audio></span> e <span>&lt;picture></span>
+      </p>
+      <p>
+         A  tag <span>&lt;source></span> permite que você especifique arquivos alternativos de <strong>vídeo/áudio/imagem</strong> que o navegador pode escolher, com base no suporte do navegador ou na largura da janela de visualização. O navegador escolherá o primeiro <span>&lt;source></span> que suportar.
+      </p>
+      
+   </section>
+   <hr>
+
+   <section>
+   <h2>Atributos da Tag SOURCE</h2>
+   <p>
+      Note que a tag <strong>&lt;source></strong> possui três atributos: 
+   </p>
+   <dl>
+      <dt>‣ type</dt> 
+      <dd>
+         vai indicar o media type da imagem que usamos (veja mais informações
+         sobre media types no capítulo 10)
+      </dd> 
+      <dt>‣ srcset</dt>
+      <dd>
+         vai configurar o nome da imagem que será carregada quando o tamanho
+         indicado for atingido
+      </dd> 
+      <dt>‣ media</dt>
+      <dd>
+         indica o tamanho máximo a ser considerado para carregar a imagem
+         indicada no atributo srcset.
+      </dd>
+   </dl>
+   </section>
+   <hr>
+   
+   <section>
+      <h2>Source no elemento PICTURE</h2>
+      <pre>
+         <span>&lt;picture></span>
+            <strong>&lt;source</strong> media="(max-width: 700px)" 
+               srcset="imagens/img-300-pq.png" 
+               type="image/png">
+            <strong>&lt;source</strong> media="(max-width: 1050px)"  
+               srcset="imagens/img-700-m.png" 
+               type="image/png">
+            <strong>&lt;img</strong> src="imagens/img-1000-G.png" 
+               alt="Imagem grande">
+         <span>&lt;/picture></span></pre>
+            <br>
+   </section>
+   
+   <section id="imagens">
+      <picture>
+         <source media="(max-width: 700px)" srcset=" imagens/img-300-pq.png" type="image/png">
+         <source media="(max-width: 1050px)"  srcset="imagens/img-700-m.png" type="image/png">
+         <img src="imagens/img-1000-G.png" alt="Imagem grande">
+      </picture>
+   </section>
+   <hr>
+
+   <section>
+      <h2>Source no elemento AÚDIO</h2>
+
+   <pre>
+      <strong><span>&lt;audio</span> <mark>controls></mark></strong>
+         <strong>&lt;source</strong> src="/codigos/cap_03/som.ogg" 
+            type="audio/ogg" 
+            codecs="vorbis" 
+            media="screen">
+         <strong>&lt;source</strong> src="/codigos/cap_03/som.mp3" 
+            type="audio/mpeg" 
+            codecs="mp3" 
+            media="screen">
+         &lt;!--Código (x)Html para inserção 
+         de som.mp3 para flash-->
+         &lt;p>
+            Se seu navegador não suporta 
+            o elemento <strong>audio</strong> Html:5. 
+            Faça &lt;a href="som.mp3">download 
+            do som.mp3&lt;/a>
+         &lt;/p>
+      <span>&lt;/audio></span></pre>
+   
+      <audio controls>
+         <source src="/codigos/cap_03/som.ogg" 
+            type="audio/ogg" 
+            codecs="vorbis" 
+            media="screen">
+         <source src="/codigos/cap_03/som.mp3" 
+            type="audio/mpeg" 
+            codecs="mp3" 
+            media="screen">
+         <!--Código (x)Html para inserção de som.mp3 para flash-->
+         <p>
+            Se seu navegador não suporta o elemento audio Html:5. 
+            Faça <a href="som.mp3">download do som.mp3</a>
+         </p>
+      </audio>
+   </section>
+   <hr>
+   
+   <h2>Source no elemento VÍDEO</h2>
+   <pre>
+   <span>&lt;video</span>  controls>
+      <strong>&lt;source</strong> src="/codigos/cap_03/video.ogv" type="video/ogv">
+      <strong>&lt;source</strong> src="/codigos/cap_03/video.mp4" type="video/mp4">
+      <strong>&lt;source</strong> src="/codigos/cap_03/video.webm" type="video/webm">
+      <strong>&lt;source</strong> src="/codigos/cap_03/video.m4v" type="video/m4v">
+   <span>&lt;/video></span></pre>
+   <br>
+   
+   <section>
+   <video  controls>
+      <source src="/codigos/cap_03/video.ogv" type="video/ogv">
+      <source src="/codigos/cap_03/video.mp4" type="video/mp4">
+      <source src="/codigos/cap_03/video.webm" type="video/webm">
+      <source src="/codigos/cap_03/video.m4v" type="video/m4v">
+   </video>
+   </section>
+   <hr>
+
+</body>
+</html>
