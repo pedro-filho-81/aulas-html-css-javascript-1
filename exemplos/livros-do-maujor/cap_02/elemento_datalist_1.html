@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elemento Datalist Html</title>
+   <style>
+      header {
+         background-color: #ccc;
+         color: #ff0000;
+         padding: 3px;
+         text-align: center;
+      }
+      p {
+         width: 500px;
+         text-align: justify;
+      }
+      pre {
+         font-size: 16px;
+      }
+      strong {
+         background-color: white;
+         font-size: 18px;
+      }
+   </style>
+</head>
+<body>
+   <div class="tudo">
+   <header>
+      <h1>Elemento Datalist Html</h1>
+   </header>
+
+   <main>
+      <p>
+         Criado para ser usado em conjunto com o elemento <strong>input</strong>. Destina-se a fornecer uma lista de sugestões para preenchimento do campo <strong>input</strong> e permite que o usuário selecione uma das opções de uma lista.
+      </p>
+      <h2>Resultado do Exemplo abaixo</h2>
+      <form action="#">
+         <label for="fru">Fruta preferida: </label><br>
+         <!--O FOR DO LABLE LIGA-SE AO ImPUT PELO ID-->
+         <input type="text" list="frutas" id="fru">
+         <!--O LIST DO INPUT LIGA-SE AO DATALIST PELO LIST -->
+         <datalist id="frutas">
+            <option value="Abacate"></option>
+            <option value="Abacaxi"></option>
+            <option value="Banana"></option>
+            <option value="mamão"></option>
+            <option value="manga"></option>
+            <option value="Pera"></option>
+         </datalist>
+      </form><br>
+      <h2>Exemplo DATALIST Html</h2>
+      <pre>
+      &lt;form action="#">
+         &lt;label <mark>for="fru"</mark>>Fruta preferida: &lt;/label>
+         
+         O FOR DO LABLE LIGA-SE AO ImPUT PELO ID
+         
+         &lt;input type="text" <strong>list="frutas"</strong> <mark>id="fru"</mark>>
+         
+         O LIST DO INPUT LIGA-SE AO DATALIST PELO ID
+            &lt;<strong>datalist id="frutas"</strong>>
+               &lt;option value="Abacate">&lt;/option>
+               &lt;option value="Abacaxi">&lt;/option>
+               &lt;option value="Banana">&lt;/option>
+               &lt;option value="mamão">&lt;/option>
+               &lt;option value="manga">&lt;/option>
+               &lt;option value="Pera">&lt;/option>
+         &lt;/datalist>
+      &lt;/form>
+      </pre>
+     
+   </main>
+
+   <footer>
+      &copy; Livro Html do Maujor
+   </footer>
+   </div>
+   
+</body>
+</html>
