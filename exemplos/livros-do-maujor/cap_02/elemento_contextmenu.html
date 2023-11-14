@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O elemento CONTEXTmENU Html</title>
+   <style>
+      input {
+         padding: 10px;
+         margin-bottom: 5px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>O elemento CONTEXTmENU Html</h1>
+   </header>
+
+   <main>
+      <p>
+         Menu de contexto é aquele que se abre quando o usuário clica com o botão direito do mouse sobre o elemento para o qual ele foi projetado.
+      </p>
+      <form name =" exemplo"> 
+         <label>Nome base: <input name ="nbase" type ="text" contextmenu ="menu_nome" > </label>
+
+      <menu type ="context" id ="menu_nome"> 
+         <command label ="Escolher randomicamente um nome" onclick ="document.forms.exemplo.elements.nbase.value = escolherNome()"> <menu command label ="Preencher demais campos" onclick ="preencherCampos(document.forms.exemplo.elements.nbase.value)"> </menu>
+      </form>
+   </main>
+
+   <footer>
+
+   </footer>
+</body>
+</html>
