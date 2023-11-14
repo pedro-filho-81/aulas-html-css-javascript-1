@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inserindo Vídeo 03 com Html</title>
+   <style>
+      body {
+         font-size: 20px;
+      }
+      header h1, h2, p, section {
+         text-align: center;
+         margin: auto;
+         line-height: 1.6;
+         padding-bottom: 5px;
+      }
+      p {
+         width: 500px;
+         text-align: justify;
+         margin-bottom: 8px;
+      }
+      span {
+         background-color: blue;
+         color: white;
+      }
+      video {
+         width: 500px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Inserindo Vídeo 03 Com AUTOPLAY Html</h1>
+   </header>
+   <hr>
+   
+   <section>
+      <h2>O Elemento Html VÍDEO</h2>
+
+      <p>
+         O elemento HTML <strong>&lt;video></strong> é usado para mostrar um vídeo em uma página da web.
+      </p>
+      
+      <h3>O Atributo SRC</h3>
+      <p>
+         O atributo<strong> src </strong> destina-se a indicar <strong>o caminho para o arquivo</strong> de vídeo  a incorporar na página.
+      </p>
+
+      <h3>Caminho para o arquivo</h3>
+
+      <p>
+         Este é o caminho <strong>"<span>/codigos/cap_03/video.ogv</span>"</strong> atribuido ao SRC onde se encontra o arquivo do vídeo que será exibido. 
+      </p>
+   
+
+      <h3>O Atributo CONTROLS</h3>
+      <p>
+         O atributo <strong>controls</strong> destina-se a fazer com que o navegador renderize os controles nativos para o usuário interagir com o vídeo.
+      </p>
+
+      <h3>O Atributo AUTOPLAY</h3>
+      <P>
+         Para iniciar um <strong>vídeo com Reprodução automática</strong>, assim que a página for renderizada, use o atributo <strong>autoplay</strong>, com ou sem o atributo <strong>controls</strong>.
+      </P>
+   
+      <h3>O Elemento Html VÍDEO e seus AtributoS</h3>
+   <pre>
+   <strong>&lt;video</strong> 
+   <mark>src</mark>="<span>/codigos/cap_03/video.ogv</span>"<strong> <mark>controls</mark> <mark>autoplay</mark> >
+   &lt;/video></strong>
+   </pre>
+   </section>
+   <hr>
+
+   <section id="video">
+      <h2>Vídeo com controles</h2>
+      <video src="/codigos/cap_03/video.ogv" controls autoplay></video>
+   </section>
+   <br>
+   <hr>
+
+</body>
+</html>
