@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Imagens Dinâmicas Html</title>
+   <style>
+      body {
+         font-size: 20px;
+      }
+      header h1, h2, h3, p, section {
+         text-align: center;
+         margin: auto;
+         line-height: 1.6;
+         padding-bottom: 5px;
+      }
+      p {
+         width: 500px;
+         text-align: justify;
+         margin-bottom: 8px;
+      }
+      span {
+         background-color: rgb(61, 61, 232);
+         color: white;
+         font-weight: bold;
+      }
+      
+      h1 {
+         background-color: #ccc;
+         color: red;
+         padding: 5px;
+         border: 1px solid #c53f3f;
+         text-align: center;
+      }
+      dl {
+         width: 500px;
+         font-size: 18px;
+         text-align: justify;
+         margin: 0 auto;
+      }
+      pre {
+         text-align: justify;
+         width: 500px;
+         font-size: 20px;
+         margin: 0 auto;
+      }
+      dt {
+         font-weight: bold;
+      }
+      span {
+         background-color: rgb(61, 61, 232);
+         color: white;
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Imagens Dinâmicas Html</h1>
+   </header>
+   <section>
+      <h2>O Elemento PICTURE Html</h2>
+
+      <p>
+         O uso mais comum do elemento <span>&lt;picture></span> será para direção de arte em designs responsivos. Em vez de ter uma imagem ampliada ou reduzida com base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor a janela de visualização do navegador.
+      </p>
+
+      <p>
+         O navegador procurará o primeiro elemento <span>&lt;source></span> onde a consulta de mídia corresponde à largura da janela de visualização atual e, em seguida, exibirá a imagem adequada <strong>(especificada no atributo srcset)</strong>. O elemento <span>&lt;img></span> é necessário como o último filho do elemento <span>&lt;picture></span>, como uma opção de fallback se nenhuma das tags de origem corresponder.
+      </p>
+
+      <p>
+         <mark>Dica:</mark> O elemento <span>&lt;picture></span> funciona de forma “semelhante” com os elementos <span>&lt;video></span> e <span>&lt;audio></span>. Configura-se as fontes diferentes, e a primeira fonte que atende às preferências é aquela que está sendo usada.
+      </p>
+   </section>
+
+   <section>
+   <h3>Exemplo Picture</h3>
+   <pre>
+   <span>&lt;picture></span>
+      <strong>&lt;source</strong> <mark>media</mark>="(max-width: 700px)" 
+         <mark>srcset</mark>="imagens/img-300-pq.png" 
+         <mark>type</mark>="image/png">
+      <strong>&lt;source</strong> media="(max-width: 1050px)"  
+         srcset="imagens/img-700-m.png" 
+         type="image/png">
+      <strong>&lt;img</strong> src="imagens/img-1000-G.png" 
+         alt="Imagem grande">
+   <span>&lt;/picture></span></pre>
+      <br>
+
+   <p>
+      Note que a tag <strong>&lt;source></strong> possui três atributos: 
+   </p>
+   <dl>
+      <dt>‣ type</dt> 
+      <dd>
+         Indicar o tipo de mídia da imagem que será usada, se o srcset="imagem/image.png" o type="image/png".
+      </dd> 
+      <dt>‣ srcset</dt>
+      <dd>
+         mostrar o caminho do arquivo da imagem a ser exibido. srcset="<span>arquivo-da-imagem/image.png</span>".
+      </dd> 
+      <dt>‣ media</dt>
+      <dd>
+         indica o tamanho máximo ou mínimo da página a ser considerado para carregar a imagem
+         indicada no atributo srcset, media="(max-width: 750px;)".
+      </dd>
+   </dl>
+   </section>
+   
+   <section id="imagens">
+      <picture>
+         <source media="(max-width: 700px)" srcset="imagens/img-300-pq.png" type="image/png">
+         <source media="(max-width: 1050px)"  srcset="imagens/img-700-m.png" type="image/png">
+         <img src="imagens/img-1000-G.png" alt="Imagem grande">
+      </picture>
+   </section>
+</body>
+</html>
