@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vídeo do YOUTUBE Html:5</title>
+   <style>
+      body {
+         font-size: 20px;
+      }
+      header h1, h2, p, section {
+         text-align: center;
+         margin: auto;
+         line-height: 1.6;
+         padding-bottom: 5px;
+      }
+      p {
+         width: 500px;
+         text-align: justify;
+         margin-bottom: 8px;
+      }
+      pre {
+         text-align: justify;
+         width: 500px;
+         font-size: 18px;
+         margin: 0 auto;
+      }
+      span {
+         background-color: rgb(61, 61, 232);
+         color: white;
+         font-weight: bold;
+      }
+      #section video {
+         width: 700px;
+         height: 400px;
+      }
+      dl {
+         width: 500px;
+         margin: 0 auto;
+      }
+      dt {
+         font-weight: bold;
+      }
+      ol {
+         width: 500px;
+         text-align: justify;
+         margin: 0 auto;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Vídeo do YOUTUBE na Html:5</h1>
+   </header>
+   <hr>
+   
+   <section id="youtube">
+      <h2>Como incluir Vídeos do YOUTUBE</h2>
+      <ol>
+         <li>No <span>YouTube</span>, abra o vídeo que você quer incorporar e clique em COMPARTILHAR</li>
+         <li>Uma janela vai aparecer, escolha o item INCORPORAR</li>
+         <li>Vai aparecer em uma nova janela com a tag <span>&lt;iframe></span><mark> conteúdo </mark><span>&lt;/iframe></span> logo abaixo um botão que permite COPIAR o código, clique nele.</li>
+         <li>Volte ao seu editor de código <span>e cole a tag no seu arquivo</span> HTML que vai apresentar o vídeo.</li>
+      </ol>
+      <hr>
+
+      <section>
+         <h2>Exemplo da tag IFRAmE do YOUTUBE</h2>
+   <pre>
+   <span>&lt;iframe</span> width="560" height="315" 
+   src="https://www.youtube.com/embed/3hng-hmSv2Y?si=zp1sE5V1wqk-zV0Z" 
+   title="YouTube video player" 
+   frameborder="0" 
+   allow="accelerometer; 
+   autoplay; 
+   clipboard-write; 
+   encrypted-media; 
+   gyroscope; 
+   picture-in-picture; 
+   web-share" 
+   allowfullscreen>
+   <span>&lt;/iframe></span></pre>
+   <br>
+   <hr>
+
+   </section>
+      <h2>Resultado do Exemplo Acima</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=zp1sE5V1wqk-zV0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </section>
+
+</body>
+</html>
