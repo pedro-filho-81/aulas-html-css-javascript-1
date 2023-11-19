@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+h1 {
+   background: black;
+   color: white;
+}
+.first {
+   color: red;
+   margin: 10px;
+   padding: 20px;
+}
+a {
+   color: cornflowerblue;
+   text-decoration: none; /* remove o sublinhado default */
+}
+a:hover { /* fundo amarelo quando passar com o mause por cima */
+   background-color: #ff0;
+   text-decoration: underline;
+}
+a:visited { /* cor das letras tomato depois do site ser visitado */
+   color: tomato;
+}
