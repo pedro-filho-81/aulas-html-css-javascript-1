@@ -1,0 +1,18 @@
+@charset "utf-8"; /* Para caracteres especiais */
+
+ol { /* define as listas ordenadas */
+   border: 5px solid darksalmon;
+   border-radius: 10px;
+}
+
+.content li { /* define a(s) listas que está dentro da classe conteúdo com a cor maron */
+   color: brown;
+}
+
+li:first-child { /* estiliza o primeiro filho da lista com o fundo amarelo */
+   background: yellow;
+}
+
+li:nth-child(2) { /* estiliza o segundo filho da lista com o fundo na cor laranja */
+   background: orange;
+}
