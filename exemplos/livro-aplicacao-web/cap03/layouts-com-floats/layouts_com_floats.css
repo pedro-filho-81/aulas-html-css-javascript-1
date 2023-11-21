@@ -1,8 +1,19 @@
 @charset "utf-8";
 
+* {
+   margin: 0;
+   padding: 0;   
+}
+
+body {
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f6f5f5;
+}
+
 h1 {
    background: yellow;
-   color: blue;
+   color: #0000ff;
    text-align: center;
    padding: 10px;
    width: 500px;
@@ -12,7 +23,8 @@ h1 {
 main {
    width:  500px;
    margin: auto;
-   background: gray;
+   background: lightgray;
+   overflow: auto;   
 }
 
 nav {
@@ -29,6 +41,17 @@ nav p {
 
 p.content {
    margin: 0; /*define a margem default como 0 */
+   padding: 10px;
    float: left;
-   width: 400px;
+   width: 380px;
+}
+
+footer {
+   background-color: gray;
+   color: white;
+   text-align: center;
+   width: 500px;
+   padding: 10px;
+   margin: auto;
+   clear: both; /* ou podemos simplismente usar u 'clear: left;', nesse caso. */
 }
