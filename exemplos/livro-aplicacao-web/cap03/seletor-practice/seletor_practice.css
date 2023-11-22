@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*
+   1- selecione h1
+      h1
+   2- selecione h2
+      h2
+   3- selecione todos os parágrafos relevantes
+      .relevant p
+   4- selecione o primeiro parágrafo entre os parágrafos relevantes
+      .relevant p:first-child
+   5- selecione o terceiro parágrafo relevante
+      .relevant p:nth-child(3)
+   6- selecione o sétimo parágrafo relevante
+      .relevant p:nth-child(7)
+   7- selecione todos os parágrafos da página
+      p {}
+   8- selecione somente o parágrafo aleatório, sem associação
+      p {}
+*/
+
+/* selecione h1 e h2 */
+h1, h2 {
+   color: red;
+}
+/* selecione o primeiro parágrafo relevante */
+.relevant p:first-child {
+   color: blue;
+}
+/* selecione todos os parágrafos relevantes */
+.relevant p {
+   color: gray;
+}
+
+/* selecione o terceiro parágrafo relevante */
+.relevant p:nth-child(3) {
+   color: green;
+}
+
+/* selecione o sétimo parágrafo relevante */
+.relevant p:nth-child(7) {
+   color: maroon;
+}
+
+/* selecione todos os parágrafos da página */
+p {
+   width: 500px;
+   background-color: white;
+}
+
+/* selecione o parágrafo fora da classe relevante */
+p {
+   color: brown; 
+}
