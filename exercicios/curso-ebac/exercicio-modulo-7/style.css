@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body {
+   background: rgb(221, 225, 243);
+   font-size: 18px;
+}
+
+header {
+   border: 1px solid black;
+   background-color: blue;
+   margin-bottom: 8px;
+}
+
+h1 {
+   text-align: center;
+   color: white;
+}
+
+header, main, footer {
+   width: 35%;
+   margin: 2px auto;
+}
+
+main form {
+   background-color: #0505f33b;
+   font-family: sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid blue;
+   padding: 8px;
+}
+
+main form button {
+   font-size: 18px;
+   font-weight: bold;
+   padding: 10px;
+}
+
+main form button:hover {
+   background-color: blue;
+   color: white;
+   border-radius: 10px;
+}
+
+#resposta {
+   text-align: center;
+   background-color: white;
+   color: maroon;
+   font-size: 18px;
+}
+
+footer {
+   background-color: blue;
+   color: white;
+   text-align: center;
+   padding: 8px;
+   margin-top: 8px;
+}
