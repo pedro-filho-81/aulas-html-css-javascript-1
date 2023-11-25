@@ -3,7 +3,7 @@ const frm = document.querySelector('form');
 const numero1 = document.querySelector('#icampo1');
 const numero2 = document.querySelector('#icampo2');
 
-let mensagem = document.querySelector('#resposta1');
+let mensagem = document.querySelector('#resposta');
 
 function validaNumero(n1, n2) {
    if(n1 < n2) {
@@ -15,8 +15,6 @@ function validaNumero(n1, n2) {
 
 /* AO CLICAR NO BOTÃO DO FORmULÁRIO */
 frm.addEventListener('submit', function(e) {
-
-   e.preventDefault();
 
    let valorValido = validaNumero(numero1.value, numero2.value);
 
@@ -31,4 +29,6 @@ frm.addEventListener('submit', function(e) {
    
    numero1.value = '';
    numero2.value = '';
+
+   e.preventDefault();
 })
