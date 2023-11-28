@@ -1,6 +1,8 @@
 let main = function() {
    "use strict"; /* sempre usar essa string como primeira linha de código */
-   window.alert('Hello world!');
+   $(".comment-input button").on("click", function(event){
+      console.log("Hello World!");
+   });
 };
 
 /* chama a função main */
