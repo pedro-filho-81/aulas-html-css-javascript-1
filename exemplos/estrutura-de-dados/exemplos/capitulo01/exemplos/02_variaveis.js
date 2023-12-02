@@ -71,11 +71,14 @@ console.log('und: + und: ' + und);
 console.log('// ******* Variable Scope - escopo de variável')
 
 var myVariable = 'global'; // mayVariable recebe a string global
+
 console.log('var myVariable = \'global\'; // cria a variável mayVariable que recebe a string global. ' + myVariable);
 
-myOtherVariable = 'global'; // mayOtherVariable recebe outra string global
+let myOtherVariable = 'global'; // mayOtherVariable recebe outra string global
 
-console.log('myOtherVariable = \'global\'; // mayOtherVariable recebe outra string global' + myOtherVariavle);
+console.log('let myOtherVariable = \'global\'; // mayOtherVariable recebe outra string global' + myOtherVariable);
+
+/* CRIA FUNÇÕES0 */
 
 // cria a função myFunction
 function myFunction() {
@@ -87,7 +90,7 @@ function myFunction() {
 // cria a função myOtherFunction
 function myOtherFunction() {
   // cria a variável myOtherVariable que recebe a string local.
-  myOtherVariable = 'local';
+  let myOtherVariable = 'local';
   // a função retorna o valor da variável local myOtherVariable
   return myOtherVariable;
 } // fim da função myOtherVariable.
