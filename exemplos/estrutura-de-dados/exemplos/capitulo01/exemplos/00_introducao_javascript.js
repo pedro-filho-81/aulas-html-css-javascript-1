@@ -89,29 +89,48 @@ book.author = "Flanagan";  // Crie novas propriedades por meio de atribuição.
 console.log('book.author = "Flanagan";  // O objeto book, Crie novas propriedade author que recebe a string "Flanagan".');
 
 book.contents = {};  // {} é um objeto vazio sem qualquer propriedade. 
-console.log('');
+console.log('book.contents = {};  // {} é um objeto vazio sem qualquer propriedade.');
 
 // ARRAYS
 // JavaScript também aceita arrays (listas indexadas numericamente) de valores.  
+console.log('// JavaScript também aceita arrays (listas indexadas numericamente) de valores.');
+
 var primes = [2, 3, 5, 7]; // Um array de 4 valores, delimitados com [e].  
+console.log('var primes = [2, 3, 5, 7]; // Um array de 4 valores, delimitados com [e].');
 
 primes[0]   // => 2: o primeiro elemento (índice 0) do array.  
+console.log('primes[0] exibe o primeiro elemento (índice 0) do array, que é ' + primes[0]);
+
 primes.lenght  // => 4: quantidade de elementos no array.  
+console.log('primes.lenght => exibe a quantidade de elementos no array, que é ' + primes.length);
+
 primes[primes.lenght-1] // => 7: o último elemento do array.  
+console.log('primes[primes.lenght-1] exibe o último elemento do array, que é ', primes[primes.length -1]);
+
 primes[4] = 9; // Adiciona um novo elemento por meio de atribuição.  
+console.log('primes[4] = 9; // Adiciona um novo elemento por meio de atribuição.');
+console.log(`primes = ${primes}`);
+
 primes[4] = 11;   // Ou altera um elemento existente por meio de atribuição.  
+console.log('');
+
 var empty = [];   // [] é um array vazio, sem qualquer elemento.  
+console.log('');
+
 empty.lenght // => 0 exibe a quantidade de elementos dentro do array empty
+console.log('');
 
 // Os arrays e objetos podem conter outros arrays e objetos:  
 var points = [// Um array com 2 elementos.  
 {x:0, y:0}, // Cada elemento é um objeto.  
 {x:1, y:1}  ]; // colchete fechado é o fim do array points 
+console.log('');
 
 var data = {// Um objeto com 2 propriedades  
    trial1: [[1,2], [3,4]],// O valor de cada propriedade é um array.  
    trial2: [[2,3], [4,5]],// Os elementos dos arrays são arrays.  
 }; // chave fechada é o fim de um objeto
+console.log('');
 
 // OPERADORES
 /*
@@ -119,13 +138,28 @@ var data = {// Um objeto com 2 propriedades
 */
 
 // Os operadores atuam sobre os valores (operandos) para produzir um novo valor.  
+console.log('');
+
 // Os operadores aritméticos são os mais comuns:  
+console.log('');
+
 3 + 2// => 5: adição 
+console.log('');
+
 3 - 2// => 1: subtração  
+console.log('');
+
 3 * 2// => 6: multiplicação  
+console.log('');
+
 3 / 2// => 1.5: divisão  
+console.log('');
+
 points[1].x - points[0].x  // => 1: operandos mais complicados também funcionam  
+console.log('');
+
 "3" + "2"// => "32": + soma números, ou concatena strings
+console.log('');
 
 // JavaScript define alguns operadores aritméticos de forma abreviada  
 var count = 0; // Define uma variável  
