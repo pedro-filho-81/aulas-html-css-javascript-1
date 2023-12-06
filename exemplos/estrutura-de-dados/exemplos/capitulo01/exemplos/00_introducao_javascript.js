@@ -109,80 +109,137 @@ console.log('primes[primes.lenght-1] exibe o último elemento do array, que é '
 
 primes[4] = 9; // Adiciona um novo elemento por meio de atribuição.  
 console.log('primes[4] = 9; // Adiciona um novo elemento por meio de atribuição.');
-console.log(`primes = ${primes}`);
+console.log(`exibe o conteúdo do array: primes = ${primes}`);
 
-primes[4] = 11;   // Ou altera um elemento existente por meio de atribuição.  
-console.log('');
+primes[4] = 11;   // altera um elemento existente por meio de atribuição; sai o 9 entra o 11 no lugar.  
+console.log('primes[4] = 11; //  altera um elemento existente por meio de atribuição;  sai o 9 entra o 11 no lugar.');
+console.log(`exibe o conteúdo do array: primes = ${primes}`);
 
 var empty = [];   // [] é um array vazio, sem qualquer elemento.  
-console.log('');
+console.log('var empty = []; // cria um array vazio, sem qualquer elemento.');
 
 empty.lenght // => 0 exibe a quantidade de elementos dentro do array empty
-console.log('');
+console.log(`empty.lenght // exibe a quantidade de elementos dentro do array empty; que é ${empty.length}`);
 
-// Os arrays e objetos podem conter outros arrays e objetos:  
+// Os arrays e objetos podem conter outros arrays e objetos:
+console.log('\n// Os arrays e objetos podem conter outros arrays e objetos:');
+console.log('var points = [// Um array com 2 elementos.')
+console.log('{x:0, y:0}, // Cada elemento é um objeto.');
+console.log('{x:1, y:1}  ]; // colchete fechado é o fim do array points');
+
 var points = [// Um array com 2 elementos.  
 {x:0, y:0}, // Cada elemento é um objeto.  
 {x:1, y:1}  ]; // colchete fechado é o fim do array points 
-console.log('');
+
+console.log('\nvar data = {// Um objeto com 2 propriedades');
+console.log('\ttrial1: [[1,2], [3,4]],// O valor de cada propriedade é um array.');
+console.log('\ttrial2: [[2,3], [4,5]],// Os elementos dos arrays são arrays.');
+console.log('}; // chave fechada é o fim de um objeto');
 
 var data = {// Um objeto com 2 propriedades  
    trial1: [[1,2], [3,4]],// O valor de cada propriedade é um array.  
    trial2: [[2,3], [4,5]],// Os elementos dos arrays são arrays.  
 }; // chave fechada é o fim de um objeto
-console.log('');
 
 // OPERADORES
 /*
    Uma das maneiras mais comuns de formar expressões em JavaScript é usar operadores, como segue:  
 */
+console.log('\n/*\n\tUma das maneiras mais comuns de formar expressões em JavaScript \n\té usar operadores, como segue:\n*/');
 
 // Os operadores atuam sobre os valores (operandos) para produzir um novo valor.  
-console.log('');
+console.log('// Os operadores atuam sobre os valores (operandos) para produzir um novo valor.');
 
 // Os operadores aritméticos são os mais comuns:  
-console.log('');
+console.log('// Os operadores aritméticos são os mais comuns:');
 
 3 + 2// => 5: adição 
-console.log('');
+console.log(`Adição => 3 + 2 = ${3 + 2}`);
 
 3 - 2// => 1: subtração  
-console.log('');
+console.log(`Subtração => 3 - 2 = ${3 - 2}`);
 
-3 * 2// => 6: multiplicação  
-console.log('');
+3 * 2// => 6: multiplicação
+console.log(`multiplicação => 3 * 2 = ${3 * 2}`);  
 
-3 / 2// => 1.5: divisão  
-console.log('');
+3 / 2// => 1.5: divisão
+console.log(`Divisão => 3 / 2 = ${3 / 2}`);
+
+3 % 2 // resto da divisão
+console.log(`resto da divisão => 3 % 2 = ${3 % 2}`);
 
 points[1].x - points[0].x  // => 1: operandos mais complicados também funcionam  
-console.log('');
+console.log(`points[1].x - points[0].x = ${points[1].x - points[0].x}  // operandos mais complicados também funcionam`);
 
 "3" + "2"// => "32": + soma números, ou concatena strings
-console.log('');
+console.log('"3" + "2" = "32"; // o sinal de adição (+) pode ser soma números, ou concatena (unine, junta) strings');
 
-// JavaScript define alguns operadores aritméticos de forma abreviada  
-var count = 0; // Define uma variável  
-count++; // Incrementa a variável em 1  
+
+// JavaScript define alguns operadores aritméticos de forma abreviada 
+console.log('\n// JavaScript define alguns operadores aritméticos de forma abreviada ');
+
+var count = 0; // Define uma variável 
+console.log('var count = 0; // Define uma variável com o valor zero'); 
+
+count++; // Incrementa a variável em 1
+console.log(`count++, count = ${count}; // Incrementa a variável em 1`);
+
 count--; // Decrementa a variável em 1 
-count += 2; // Soma 2: o mesmo que count = count + 2;  
+console.log(`count--; count = ${count}; // Decrementa a variável em 1`);
+
+count += 2; // Soma 2: o mesmo que count = count + 2;
+console.log(`count += 2; count = ${count}; // Soma 2: o mesmo que count = count + 2;`);
+
 count *= 3; // Multiplica por 3: o mesmo que count = count * 3;  
+console.log(`count *= 3;  count = ${count}; // Multiplica por 3: o mesmo que count = count * 3;`);
+
 count;   // => 6: nomes de variáveis também são expressões.
+console.log(`count é ${count}; // exibe o valor de count / nomes de variáveis também são expressões.`);
 
 // Os operadores de igualdade e relacionais testam se dois valores são iguais,  
+console.log('\n// Os operadores de igualdade e relacionais testam se dois valores são iguais,');
+
 // desiguais, menores que, maiores que, etc. São avaliados como verdadeiros ou falsos.  
+console.log('// desiguais, menores que, maiores que, etc. São avaliados como verdadeiros ou falsos.');
+
 var x = 2, y = 3; // Esses sinais = são atribuições e não testes de igualdade.  
+console.log('var x = 2, y = 3; // Esses sinais = são atribuições e não testes de igualdade.');
+
 x == y   // => falso: igualdade  
+console.log(`Sinal de igual (==): x == y? ${x == y}`);
+
 x != y   // => verdadeiro: desigualdade  
+console.log(`Sinal de diferente (!=): x != y? ${x != y}`);
+
 x < y    // => verdadeiro: menor que  
+console.log(`Sinal de menor que (<): x < y? ${x < y}`);
+
 x <= y   // => verdadeiro: menor ou igual a  
+console.log(`Sinal de menor ou igual a (<=): x <= y? ${x <= y}`);
+
 x > y    // => falso: maior que  
+console.log(`Sinal de maior que (>): x > y? ${x > y}`);
+
 x >= y   // => falso: maior ou igual a  
+console.log(`Sinal de maior ou igual a (>=): x >= y? ${x >= y}`);
+
 "two" == "three"  // => falso: as duas strings são diferentes  
+console.log(`Sinal de igual (==): "two" == "three"? ${"two" == "three"}`);
+
 "two" > "three"   // => verdadeiro: "tw" é alfabeticamente maior do que "th"  
+console.log(`Sinal de maior que (>): "two" > "three"? ${"two" > "three"}`);
+
 false == (x > y)  // => verdadeiro: falso é igual a falso 
+console.log(`Sinal de igual (==): false == (x > y)? ${false == (x > y)}`);
 
 // Os operadores lógicos combinam ou invertem valores booleanos  
+console.log('\n// Os operadores lógicos combinam ou invertem valores booleanos');
+
 (x == 2) && (y == 3)  // => verdadeiro: as duas comparações são verdadeiras. && é E  
+console.log('');
+
 (x > 3) || (y < 3)   // => falso: nenhuma das comparações é verdadeira. || é OU  
+console.log('');
+
 !(x == y)   // => verdadeiro: ! inverte um valor booleano 
+console.log('');
