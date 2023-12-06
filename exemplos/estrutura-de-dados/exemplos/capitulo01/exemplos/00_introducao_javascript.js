@@ -1,5 +1,5 @@
 // usando o alert no arquivo JavaScript
-// alert('Hello World JavaScript! Dentro do arquivo .js');
+alert('Hello World JavaScript! Dentro do arquivo .js');
 
 // Tudo que vem após barras normais duplas é um comentário em linguagem natural.  
 console.log('// Tudo que vem após barras normais duplas é um comentário em linguagem natural.');
@@ -11,7 +11,7 @@ console.log('// Leia os comentários atentamente: eles explicam o código JavaSc
 console.log('// variável é um nome simbólico para um valor.  ');
 
 // As variáveis são declaradas com a palavra-chave var, let ou const:
-console.log('// As variáveis são declaradas com a palavra-chave var, let ou const:');
+console.log('\n// As variáveis são declaradas com a palavra-chave var, let ou const:');
 
 var x;// Declara uma variável chamada x.  
 console.log('var x;// Declara uma variável chamada x.');
@@ -236,10 +236,32 @@ console.log(`Sinal de igual (==): false == (x > y)? ${false == (x > y)}`);
 console.log('\n// Os operadores lógicos combinam ou invertem valores booleanos');
 
 (x == 2) && (y == 3)  // => verdadeiro: as duas comparações são verdadeiras. && é E  
-console.log('');
+console.log(`(x == 2) && (y == 3) = ${(x == 2) && (y == 3)} // as duas comparações são verdadeiras. && é E`);
 
 (x > 3) || (y < 3)   // => falso: nenhuma das comparações é verdadeira. || é OU  
-console.log('');
+console.log(`(x > 3) || (y < 3) = ${(x > 3) || (y < 3)}  // nenhuma das comparações é verdadeira. || é OU`);
 
 !(x == y)   // => verdadeiro: ! inverte um valor booleano 
-console.log('');
+console.log(`!(x == y) = ${!(x == y)} // Negação ( ! ) inverte um valor verdadeiro para falso ou falso para verdadeiro.`);
+
+// FUNÇÕES
+/*
+   Uma função é um bloco de código JavaScript nomeado e parametrizado que você define uma vez  e, então, pode chamar repetidamente.
+*/
+console.log('/*\n\tUma função é um bloco de código JavaScript nomeado e parametrizado que você define uma vez  e, então, pode chamar repetidamente.\n*/');
+
+// As funções são blocos de código JavaScript parametrizados que podemos chamar.  
+console.log('\n// As funções são blocos de código JavaScript parametrizados que podemos chamar.');
+
+function plus1(x) {// Define uma função chamada "plus1", com o parâmetro "x"  
+   return x + 1;// Retorna um valor uma unidade maior do que o que foi passado  
+}// As funções são incluídas entre chaves 
+
+console.log(`function plus1(x) {// Define uma função chamada "plus1", com o parâmetro "x"`);
+console.log(`return x + 1;// Retorna um valor uma unidade maior do que o que foi passado;`)
+console.log('}// As funções são incluídas entre chaves ');
+
+// chama a função plus1 e passa o valor 3 para a propriedade x
+console.log('// chama a função plus1 e passa o valor 3 para a propriedade x');
+
+console.log(`plus1(3) = ${plus1(3)}`);
