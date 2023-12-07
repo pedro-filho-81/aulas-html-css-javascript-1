@@ -264,4 +264,98 @@ console.log('}// As funções são incluídas entre chaves ');
 // chama a função plus1 e passa o valor 3 para a propriedade x
 console.log('// chama a função plus1 e passa o valor 3 para a propriedade x');
 
-console.log(`plus1(3) = ${plus1(3)}`);
+console.log(`plus1(3) = ${plus1(3)} // o valor 3 é processado pela função e retorna o resultado.`);
+
+console.log('\nVariável square recebe o valor da função.')
+console.log("var square = function(x) {// As funções são valores e podem ser atribuídas a  variáveis");
+console.log('return x * x;// Calcula o valor da função  ');
+console.log('};// Um ponto e vírgula marca o fim da atribuição.');
+
+var square = function(x) {// As funções são valores e podem ser atribuídas a  variáveis  
+   return x * x;// Calcula o valor da função  
+};// Um ponto e vírgula marca o fim da atribuição.  
+
+console.log(`square(plus1(y)) = ${square(plus1(y))} // chama duas funções em uma única expressão e exibe o resultado.`);
+square(plus1(y)); // => 16: chama duas funções em uma única expressão 
+
+// Quando combinamos funções com objetos, obtemos métodos:  
+// Quando funções recebem as propriedades de um objeto, as  chamamos de "métodos".
+
+console.log('\n// Quando combinamos funções com objetos, obtemos métodos:');
+console.log('// Quando funções recebem as propriedades de um objeto, as  chamamos de "métodos".');
+console.log('// Todos os objetos de JavaScript têm métodos:');
+
+// Todos os objetos de JavaScript têm métodos:  
+var a = []; // Cria um array vazio  
+console.log('var a = []; // Cria um array vazio');
+
+a.push(1,2,3); // O método push() adiciona elementos em um array  
+
+console.log('a.push(1,2,3); // O método push() adiciona elementos em um array');
+console.log(`a = ${a}`);
+
+a.reverse(); // Outro método: inverte a ordem dos elementos 
+
+console.log('a.reverse(); // Outro método: inverte a ordem dos elementos');
+console.log(`a = ${a}`);
+
+// Também podemos definir nossos próprios métodos. A palavra-chave "this" se refere ao    
+console.log('\n// Também podemos definir nossos próprios métodos.\nA palavra-chave "this" se refere ao');
+
+// objeto no qual o método é definido: neste caso, o array de pontos anterior.
+console.log('// objeto no qual o método é definido: neste caso, o array de pontos anterior.');
+console.log('points.dist = function() {// Define um método para calcular a distância entre pontos');
+console.log('var p1 = this[0]; // Primeiro elemento do array que chamamos');
+console.log('var p2 = this[1]; // Segundo elemento do objeto "this"')
+console.log(`var a = p2.x-p1.x; // Diferença em coordenadas X`);
+console.log(`var b = p2.y-p1.y; // Diferença em coordenadas Y`);
+console.log('return Math.sqrt(a*a + b*b) // O teorema de Pitágoras;');
+console.log('// Math.sqrt() calcula a raiz quadrada; \n};');
+
+points.dist = function() {// Define um método para calcular a distância entre pontos  
+      var p1 = this[0]; // Primeiro elemento do array que chamamos  
+      var p2 = this[1]; // Segundo elemento do objeto "this"  
+      var a = p2.x-p1.x; // Diferença em coordenadas X  
+      var b = p2.y-p1.y;// Diferença em coordenadas Y  
+      return Math.sqrt(a*a + b*b) // O teorema de Pitágoras  b*b);
+      // Math.sqrt() calcula a raiz quadrada  
+   };  
+   
+   points.dist()// => 1,414: distância entre nossos 2 pontos
+   console.log(`points.dist() = ${points.dist()} // distância entre nossos 2 pontos.`);
+
+   /* 
+      Aqui estão algumas funções cujos corpos demonstram instruções de  estruturas de controle JavaScript comuns:
+   */ 
+   // As instruções JavaScript incluem condicionais e laços que usam a sintaxe  
+   // das linguagens C, C++, Java e outras.  
+   
+   function abs(x) {// Uma função para calcular o valor absoluto  
+      if (x >= 0) {// A instrução if...  
+         return x;// retorna o valor de x, se a comparação for verdadeira.  
+      }// Este é o fim da cláusula if.  
+      else {// A cláusula opcional else executa seu código se  
+         return -x; // se a comparação for falsa.  
+      } // Chaves são opcionais quando há 1 instrução por cláusula.  
+   } // Observe as instruções return aninhadas dentro  de if/else.
+   
+   abs(-7); // chama a função abs para o valor -7
+   console.log(`abs(-7) = ${abs(7)} // calcula o valor absoluto de -7\n\n`);
+
+   function factorial(n) {// Uma função para calcular fatoriais  
+      var product = 1;// Começa com o produto de 1  
+      while(n > 1) {// Repete as instruções que estão em {}, enquanto a  
+         // expressão em () for verdadeira  
+         product *= n;// Atalho para product = product * n;  
+         n--;// Atalho para n = n – 1  
+      }// Fim do laço  
+      return product; // Retorna o produto  
+   }  // fim da função fatorial
+   
+   // chama a função fatorial para calcular o fatorial de 4
+   // factorial(4)// => 24: 1*4*3*2 
+
+console.log(`factorial(4) = ${factorial(4)} // calcula o fatorial de 4.`);
+
+console.log(``);
+console.log('');
