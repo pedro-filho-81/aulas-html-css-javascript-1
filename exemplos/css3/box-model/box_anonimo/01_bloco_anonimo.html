@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box Model CSS</title>
+   <link rel="stylesheet" href="01_bloco_anonimo.css">
+</head>
+<body>
+   <header>
+      <h1>Box Model bloco Anônimo CSS</h1>
+   </header>
+   <hr>
+
+   <main>
+      <h2>
+         Box Nível de bloco Anônimo
+      </h2>
+      <p>
+         A renderização das três linhas de texto se deu como se cada uma delas fosse um box independente.
+      </p>
+      <p>
+         Isso porque, segundo o Box Model CSS, quando um container possui um elemento nível de bloco, <br>todos no container se comportam como elementos nível de bloco.
+      </p>
+      <hr>
+      <h3>Exemplo de Bloco Anônimo CSS</h3>
+      <p>
+         Se tentarmos colocar uma cor no elemento DIV todos terão a mesma cor.
+      </p>
+      
+      <h4>Exemplo CSS</h4>
+      
+      <pre>
+      div {
+         color: blue; /* cor das letras: azuis. */
+      }</pre>
+      <p>
+         A regra CSS acima informa para colocar na cor azul todo o texto dentro do elemento Html DIV.
+      </p>
+      <div>
+         01-Text inserted directly into the div element.
+         <p>02-This is a paragraph inserted directly into the div element.</p>
+         03-Text inserted directly into the div element.
+      </div>
+      
+      <p>
+         No Exemplo acima os textos 01 e 03 são considerados blocos anônimos, <br>estão soltos no elemento DIV e se comportam como parágrafos.
+      </p>
+   </main>
+   <hr>
+
+   <footer>
+      &copy Silva, Mauricio Samy. CSS3. Novatec Editora. Edição do Kindle.  CSS3 Profissional
+   </footer>
+   <hr>
+
+</body>
+</html>
