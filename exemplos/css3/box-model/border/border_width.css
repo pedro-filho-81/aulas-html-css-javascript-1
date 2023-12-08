@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+h2 {
+   border-top-width: 5px;
+   border-right-width: 10px;
+   border-bottom-width: 8px;
+   border-right-width: 20px;
+}
+
+h2 {
+   width: 300px; /* largura da linha */
+   text-align: center; /* alinhamento do texto */
+   border-style: solid; /* estilo das bordas */
+   border-color: black; /* cor das bordas */
+   /* modelo abreviado é o recomendado */
+   border: 5px 10px 8px 20px;
+   padding: 10px; /* enchimento ao redor do conteúdo */
+}
