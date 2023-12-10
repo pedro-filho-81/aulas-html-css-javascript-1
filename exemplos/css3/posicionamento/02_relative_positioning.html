@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Relative Positioning CSS</title>
+   <link rel="stylesheet" href="02_relative_positioning.css">
+</head>
+<body>
+   <h1>Relative Positioning CSS</h1>
+   <p>No Position relative a posição anterior é preservada.</p>
+   <p class="first">
+      As propriedades <strong>left e right</strong> definem o quanto o bloco deve ser deslocado para a direita ou esquerda, respectivamente, e as propriedades <strong>top e bottom</strong> o deslocamento para baixo ou para cima,respectivamente.
+   </p>
+   <hr>
+   <h3>Texto Original</h3>
+   <div class="one">
+      Este texto extá contido no Div1.
+   </div>
+   <div class="origin">
+      Este texto está contido no Div2.
+   </div>
+   <div class="three">
+      Este texto está contido no Div3.
+   </div>
+   <hr>
+
+   <h3>Exemplo Css</h3>
+   <pre>
+   .two {
+      width: 300px;
+      border: 2px solid black;
+      background: blue;
+      color: white;
+
+      <strong>position: relative;</strong>
+      <strong>left: 200px;</strong> /* Desloca 200 pixel da       
+                     esquerda para direita */
+      <strong>top: 20px;</strong> /* Desloca 20 pixel da posição 
+                     de origem para baixo. */
+   }</pre>
+   <hr>
+
+   <h3>Resultado do Exemplo acima</h3>
+   <div class="one">
+      Este texto extá contido no Div1.
+   </div>
+   <div class="two">
+      Este texto está contido no Div2.
+   </div>
+   <div class="three">
+      Este texto está contido no Div3.
+   </div>
+   <hr>
+
+</body>
+</html>
