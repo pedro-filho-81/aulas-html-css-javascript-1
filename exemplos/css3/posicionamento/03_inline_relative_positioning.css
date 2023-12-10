@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+p {
+   width: 500px;
+   text-align: justify;
+}
+
+#original, #resultado {
+   background-color: blue;
+   color: white;
+   text-align: center;
+}
+
+/* regras css para o elemento inline strong */
+#resultado strong {
+   background: yellow;
+   color: green;
+   position: relative;
+   left: 60px;
+   bottom: 20px;
+}
