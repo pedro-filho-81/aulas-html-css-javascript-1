@@ -2,19 +2,19 @@
 alert('Hello World JavaScript! Dentro do arquivo .js');
 
 // Tudo que vem após barras normais duplas é um comentário em linguagem natural.  
-console.log('// Tudo que vem após barras normais duplas é um comentário em linguagem natural.');
+console.log('\n*** COMENTÁRIOS ***\n// Tudo que vem após barras normais duplas é um comentário em linguagem natural.');
 
 // Leia os comentários atentamente: eles explicam o código JavaScript.
 console.log('// Leia os comentários atentamente: eles explicam o código JavaScript.');  
 
 // variável é um nome simbólico para um valor.  
-console.log('// variável é um nome simbólico para um valor.  ');
+console.log('\n*** VARIÁVEIS ***\n// variável é um nome simbólico para um valor.');
 
 // As variáveis são declaradas com a palavra-chave var, let ou const:
-console.log('\n// As variáveis são declaradas com a palavra-chave var, let ou const:');
+console.log('// As variáveis são declaradas com a palavra-chave var, let ou const:');
 
 var x;// Declara uma variável chamada x.  
-console.log('var x;// Declara uma variável chamada x.');
+console.log('var x;\t// Declara uma variável chamada x.');
 
 // Valores podem ser atribuídos às variáveis com o sinal =
 console.log('// Valores podem ser atribuídos às variáveis com o sinal (=)');
@@ -57,7 +57,7 @@ console.log('x = undefined;  // Undefined é como null.');
 */
 
 // OBJETOS
-console.log('\n/* \n\tDois outros tipos muito importantes que programas em JavaScript \n\tpodem manipular são objetos e  arrays. \n*/');
+console.log('\n*** OBJETOS ***\n/* \n\tDois outros tipos muito importantes que programas em JavaScript \n\tpodem manipular são objetos e  arrays. \n*/');
 
 // O tipo de dados mais importante de JavaScript é o objeto.  
 console.log('// O tipo de dados mais importante de JavaScript é o objeto.');
@@ -77,7 +77,7 @@ var book = {// Objetos são colocados entre chaves.
 };// A chave marca o fim do objeto.
 
 // Acesse as propriedades de um objeto com. ou []:  
-console.log('// Acesse as propriedades de um objeto com ponto . ou com abre colchetes[ valores ]fecha colchetes:');
+console.log('// Acesse as propriedades de um objeto com ponto. ou com abre colchetes[ valores ]fecha colchetes: ');
 
 book.topic  // exebe a string "JavaScript"  
 console.log('book.topic exibe a string  "JavaScript"  ');
@@ -93,12 +93,12 @@ console.log('book.contents = {};  // {} é um objeto vazio sem qualquer propried
 
 // ARRAYS
 // JavaScript também aceita arrays (listas indexadas numericamente) de valores.  
-console.log('// JavaScript também aceita arrays (listas indexadas numericamente) de valores.');
+console.log('\n*** ARRAYS ***\n// JavaScript também aceita arrays (listas indexadas numericamente) de valores.');
 
 var primes = [2, 3, 5, 7]; // Um array de 4 valores, delimitados com [e].  
 console.log('var primes = [2, 3, 5, 7]; // Um array de 4 valores, delimitados com [e].');
 
-primes[0]   // => 2: o primeiro elemento (índice 0) do array.  
+primes[0]   // o primeiro elemento (índice 0) do array.   
 console.log('primes[0] exibe o primeiro elemento (índice 0) do array, que é ' + primes[0]);
 
 primes.lenght  // => 4: quantidade de elementos no array.  
