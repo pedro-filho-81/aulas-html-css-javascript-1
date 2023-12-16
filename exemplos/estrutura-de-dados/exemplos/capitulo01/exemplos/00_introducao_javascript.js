@@ -31,7 +31,8 @@ console.log('// JavaScript aceita vários tipos de valores');
 x = 1;   // Números.  
 console.log('x = 1;   // Números.');
 
-x = 0.01;   // Apenas um tipo Number para inteiros e reais.  
+x = 0.01;   // Apenas um tipo Number para inteiros e reais.
+
 console.log('x = 0.01;   // Apenas um tipo Number para inteiros e reais.');
 
 x = "hello world";   // Strings de texto entre aspas.  
@@ -367,10 +368,9 @@ for(i=2; i <= n; i++)// Incrementa i automaticamente, de 2 até n
 // chama a função fatorial e calcula o fatorial de 5
 factorial2(5) // => 120: 1*2*3*4*5 
 
-
 console.log('Aqui está um exemplo muito simples  que demonstra como definir uma classe JavaScript para representar pontos geométricos bidimensionais.');
 
-// Define uma função construtora para inicializar um novo objeto Point  
+ // Define uma função construtora para inicializar um novo objeto Point  
 function Point(x,y) {// Por convenção, as construtoras começam com letras maiúsculas  
    this.x = x; // A palavra-chave this é o novo objeto que está sendo inicializado  
    this.y = y; // Armazena os argumentos da função como propriedades do objeto  
@@ -386,6 +386,3 @@ Point.prototype.r = function() {
 };  // Agora o objeto Point b (e todos os futuros objetos Point) herda o método r()  
 
 p.r() // => 1,414... 
-
-console.log(``);
-console.log('');
