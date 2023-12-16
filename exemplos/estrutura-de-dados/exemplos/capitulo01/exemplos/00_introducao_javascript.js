@@ -297,7 +297,7 @@ console.log(`a = ${a}`);
 a.reverse(); // Outro método: inverte a ordem dos elementos 
 
 console.log('a.reverse(); // Outro método: inverte a ordem dos elementos');
-console.log(`a = ${a}`);
+console.log(`a.reverse = ${a.reverse()}`);
 
 // Também podemos definir nossos próprios métodos. A palavra-chave "this" se refere ao    
 console.log('\n// Também podemos definir nossos próprios métodos.\nA palavra-chave "this" se refere ao');
@@ -355,7 +355,37 @@ points.dist = function() {// Define um método para calcular a distância entre 
    // chama a função fatorial para calcular o fatorial de 4
    // factorial(4)// => 24: 1*4*3*2 
 
-console.log(`factorial(4) = ${factorial(4)} // calcula o fatorial de 4.`);
+console.log(`factorial(4) = ${factorial(4)} // calcula o fatorial de 4.`);function factorial2(n) {// Outra versão, usando um laço diferente  
+
+var i, product = 1;// Começa com 1  
+for(i=2; i <= n; i++)// Incrementa i automaticamente, de 2 até n  
+   product *= i;// Faz isso a cada vez. {} não é necessário para laços  
+   // de 1 linha  
+   return product;// Retorna o fatorial  
+}  
+
+// chama a função fatorial e calcula o fatorial de 5
+factorial2(5) // => 120: 1*2*3*4*5 
+
+
+console.log('Aqui está um exemplo muito simples  que demonstra como definir uma classe JavaScript para representar pontos geométricos bidimensionais.');
+
+// Define uma função construtora para inicializar um novo objeto Point  
+function Point(x,y) {// Por convenção, as construtoras começam com letras maiúsculas  
+   this.x = x; // A palavra-chave this é o novo objeto que está sendo inicializado  
+   this.y = y; // Armazena os argumentos da função como propriedades do objeto  
+}// Nenhum return é necessário
+
+// Define métodos para objetos Point atribuindo-os ao objeto  
+// prototype associado à função construtora.  
+Point.prototype.r = function() {  
+   return Math.sqrt(// Retorna a raiz quadrada de x2 + y2  
+   this.x * this.x + // Este é o objeto Point no qual o método...  
+   this.y * this.y //...é chamado. 
+   );  
+};  // Agora o objeto Point b (e todos os futuros objetos Point) herda o método r()  
+
+p.r() // => 1,414... 
 
 console.log(``);
 console.log('');
