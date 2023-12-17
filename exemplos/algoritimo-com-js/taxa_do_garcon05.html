@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>10% do Garçon</title>
+</head>
+<body>
+   <h1>10% do Garçon</h1>
+   <p>
+      c) Elaborar um programa que leia o valor de um jantar. <br>Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.
+   </p>
+   <script>
+      const valorDaConta = Number(prompt('Informe o valor da conta R$:'));
+      const taxaDoGarcon = valorDaConta * 10 / 100;
+      const totalDaConta = valorDaConta + taxaDoGarcon;
+
+      alert(`Valor da conta R$ ${valorDaConta.toFixed(2)}\ntaxa do garçon R$ ${taxaDoGarcon.toFixed(2)}\nTotal da conta R$ ${totalDaConta.toFixed(2)}`);
+
+   </script>
+</body>
+</html>
