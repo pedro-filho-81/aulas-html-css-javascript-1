@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Viagem Dias em Horas</title>
+</head>
+<body>
+   <h1>Viagem Dias em Horas</h1>
+   <p>
+      d) Elaborar um programa que leia a duração de <br>uma viagem em dias e horas. Calcule e informe <br>a duração total da viagem em número de horas.
+   </p>
+   <hr>
+
+   <footer>      
+      Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - <br>2ª Edição: Uma introdução à programação de computadores com exemplos <br>e exercícios para iniciantes (Portuguese Edition) (p. 50). Novatec Editora. Edição do Kindle. 
+   </footer>
+   <hr>
+
+   <script>
+      // entrada dos dados
+      const numDias = Number(prompt('Informo o nº de dias da viagem: '));
+      const numHoras = Number(prompt('Informe o Nº de horas da viagem: '));
+
+      // calcular tempo em hors
+      const diasEmHoras = numDias * 24;
+      const totalEmHoras = diasEmHoras + numHoras
+
+      // exebir resultado
+      alert(`Nº de dias: ${numDias}\nNº de horas: ${numHoras}\nTotal em horas da viagem: ${totalEmHoras}`);
+   </script>
+   
+</body>
+</html>
