@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cinema</title>
+</head>
+<body>
+   <header>
+      <h1>Cinema</h1>
+   </header>
+   <hr>
+
+   <main>
+      <p>
+         a) Elaborar um programa para um Cinema, que leia o título e <br>a duração de um filme em minutos. Exiba o título do filme e <br>converta a duração para horas e minutos, conforme destacado na Figura 2.6.
+      </p>
+      <hr>
+
+      <h3>Programa para Cinema</h3>
+      <form action="#">
+         <p>
+            <label for="inTitulo">Título do filme:
+               <input type="text" id="inTitulo" placeholder="Titulo do filme:" required autofocus>
+            </label>
+         </p>
+         <p>
+            <label for="inTempo">Duração em minutos:
+               <input type="number" id="inTempo" placeholder="Duração em minutos:" required>
+            </label>
+         </p>
+         <p>
+            <input type="submit" value="Exibir">
+         </p>
+      </form>
+      <hr>
+
+      <h3>Resultado do programa</h3>
+      <h4 id="titulo"></h4>
+      <h4 id="tempo"></h4>
+   </main>
+   <hr>
+
+   <footer>
+      &copy; Iepsen, Edécio Fernando. Lógica de <br>Programação e Algoritmos com JavaScript - 2ª Edição: <br>Novatec Editora. Edição do Kindle. 
+   </footer>
+   <hr>
+
+   <script src="ex02_2.js"></script> 
+</body>
+</html>
