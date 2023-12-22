@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Revenda de Veículos</title>
+</head>
+<body>
+   <header>
+      <h1>Revenda de Veículos</h1>
+   </header>
+   <hr>
+
+   <main>
+      <p>
+         b) Elaborar um programa para uma revenda de veículos. <br>O programa deve ler modelo e preço do veículo. <br>Apresentar como resposta o valor da entrada (50%) e o saldo em 12x.
+      </p>
+      <hr>
+
+      <h3>Revenda de Veículos</h3>
+      <form action="#">
+         <p>
+            <label for="inNome">Modelo do veículo: 
+               <input type="text" id="inNome" required autofocus placeholder="Nome do veículo:">
+            </label>
+         </p>
+         <p>
+            <label for="inValor">Valor do carro R$  
+               <input type="number" id="inValor" placeholder="Valor do carro: " step=".01" required>
+            </label>
+         </p>
+         
+         <p>
+            <input type="submit" value="Ver Promoção">
+         </p>
+      </form>
+      <hr>
+
+      <h3>Resultado do programa</h3>
+      <h4 id="nome"></h4>
+      <h4 id="principal"></h4>
+      <h4 id="valor"></h4>
+      <h4 id="prestacao"></h4>
+   </main>
+   <hr>
+
+   <footer>
+      &copy; Iepsen, Edécio Fernando. Lógica de <br>Programação e Algoritmos com JavaScript - 2ª Edição: <br>Novatec Editora. Edição do Kindle. 
+   </footer>
+   <hr>
+
+   <script src="ex02_3.js"></script> 
+</body>
+</html>
