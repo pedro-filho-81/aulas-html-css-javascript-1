@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Farmácia JS</title>
+</head>
+<body>
+   <header>
+      <h1>Farmácia JS</h1>
+   </header>
+   <hr>
+
+   <main>
+      <h2>Programa da Farmácia JS</h2>
+      <p>
+         a) Uma farmácia está com uma promoção – <br>Na compra de duas unidades de um mesmo medicamento, <br>o cliente recebe como desconto os centavos do valor total. <br>Elaborar um programa que leia descrição e preço de <br>um medicamento. Informe o valor do produto na promoção.
+      </p>
+      <hr>
+
+      <form action="#">
+         <p>
+            <label for="inRemedio">Medicamento:  
+               <input type="text" id="inRemedio" placeholder="Nome do Remédio:" min="0" required autofocus>
+            </label>
+         </p>
+
+         <p>
+            <label for="inValor">Preço: 
+               <input type="number" id="inValor" placeholder="Informe o valor: " step="0.01" autofocus required>
+            </label>
+         </p>
+
+         <p>
+            <input type="submit" value="Exibir promoção">
+         </p>
+      </form>
+      <hr>
+
+      <h2 id="promocao"></h2>
+
+      <h3 id="resultado"></h3>
+
+   </main>
+   <hr>
+
+   <footer>
+      &copy; Iepsen, Edécio Fernando. Lógica de Programação <br>e Algoritmos com JavaScript - 2ª Edição: <br>(Portuguese Edition). Novatec Editora. Edição do Kindle. 
+   </footer>
+   <hr>
+   
+   <script src="farmacia.js"></script>
+
+</body>
+</html>
