@@ -1,0 +1,12 @@
+header {
+   text-align: center;
+}
+
+main p {
+   width: 500px;
+   text-align: justify;
+}
+
+footer {
+   width: 400px;
+}
