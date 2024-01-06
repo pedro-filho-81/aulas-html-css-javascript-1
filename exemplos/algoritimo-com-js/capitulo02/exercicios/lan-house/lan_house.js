@@ -8,13 +8,16 @@ const resp = document.querySelector('h3');
 
 // cria função "ouvinte" quando clicar no botão submit
 frm.addEventListener('submit', (e) => {
+
    // variável para receber o valor do campo inValor
    const valor15minutos = Number(frm.inValor.value);
    // variável para o tempo do cliente
    const tempoDoCliente = Number(frm.inTempoCliente.value);
 
    // calcular o tempo
-   const calcular = valor15minutos * Math.floor(tempoDoCliente / 4);
+   const calcular = valor15minutos * tempoDoCliente / 15;
+   // 15 = 3 
+   // 25 = x
 
    resp.innerText = `Valor a pagar R$: ${calcular.toFixed(2)}`;
 
