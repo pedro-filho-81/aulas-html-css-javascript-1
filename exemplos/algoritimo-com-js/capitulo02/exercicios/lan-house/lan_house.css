@@ -7,6 +7,11 @@ main p {
    text-align: justify;
 }
 
+form {
+   width: 350px;
+   border: 1px solid black;
+}
+
 footer {
    width: 400px;
 }
