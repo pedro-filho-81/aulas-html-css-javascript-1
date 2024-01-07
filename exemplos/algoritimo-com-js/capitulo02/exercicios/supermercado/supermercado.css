@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+header, h2 {
+   text-align: center;
+}
+
+#questionario {
+   width: 500px;
+   text-align: justify;
+}
+
+#formulario {
+   border: 1px solid black;
+   width: 300px;
+   padding-left: 15px;
+}
+
+footer {
+   width: 500px;
+   text-align: justify;
+}
