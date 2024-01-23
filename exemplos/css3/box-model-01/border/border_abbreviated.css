@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+h1 {
+   text-align: center;
+   color: #800;
+   padding: 10px;
+   /* bordas abreviadas com largura tipo e cor */
+   border-top: 2px solid #f00;
+   border-right: 3px dashed #0f0;
+   border-bottom: 4px dotted #00f;
+   border-left: 5px double #000;
+}
