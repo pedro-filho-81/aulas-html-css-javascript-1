@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.first {
+   width: 500px;
+   text-align: justify;
+}
+
+.origin {
+   width: 300px;
+   border: 2px solid black;
+   background: blue;
+   color: white;
+}
+
+.two {
+   width: 300px;
+   border: 2px solid black;
+   background: blue;
+   color: white;
+   position: relative;
+   left: 200px;
+   top: 20px;
+}

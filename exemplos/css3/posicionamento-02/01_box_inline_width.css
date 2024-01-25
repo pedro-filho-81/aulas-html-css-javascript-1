@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+   A propriedade width = largura, define a largura do elemento Html
+*/
+/*
+   The width property = width, set the width of the Html element.
+*/
+
+#one {
+   width: 300px; /* largura do parágrafo */
+   border: 2px solid black;
+}
+
+#two {
+   width: 280px; /* largura do parágrafo */
+   border: 2px solid black;
+}
+
+#three {
+   width: 250px; /* largura do parágrafo */
+   border: 2px solid black;
+}
+
+#four {
+   width: 200px; /* largura do parágrafo */
+   border: 2px solid black;
+}
+
+#five {
+   width: 100px; /* largura do parágrafo */
+   border: 2px solid black;
+}

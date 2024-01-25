@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inline Relative Positioning CSS</title>
+   <link rel="stylesheet" href="03_inline_relative_positioning.css">
+</head>
+<body>
+   <h1>Inline Relative Positioning CSS</h1>
+
+   <p>
+      As propriedades <strong>left e right</strong> definem o quanto o bloco deve ser deslocado para a direita ou esquerda, respectivamente, e as propriedades <strong>top e bottom</strong> o deslocamento para baixo ou para cima,respectivamente.
+   </p>
+   <p>
+      Elementos inline também podem ser deslocados da sua posição padrão com uso dessa declaração.
+   </p>
+   <hr>
+
+   <h3>Paráragrafo original</h3>
+   
+   <p id="original">Nesse texto esta <strong>palavras</strong> ficara em negrito e será deslocada.</p>   
+   
+   <hr>
+
+   <h3>Exemplo css</h3>
+   <pre>
+      /* regras css para o elemento inline strong */
+      #resultado strong {
+         background: yellow; /* fundo amarelo */
+         color: green;       /* letras verdes */
+         
+         <strong>position: relative;</strong> /* posição relativa preserva a posição inicial */
+         <strong>left: 60px;</strong>         /* move da esquerda para a direita 60 pixel  */
+         <strong>bottom: 20px;</strong>       /* move 20 pixel para cima */
+      }</pre>
+   <hr>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <p id="resultado">Nesse texto esta <strong>palavras</strong> ficara em negrito e será deslocada.</p>
+   <hr>
+
+</body>
+</html>

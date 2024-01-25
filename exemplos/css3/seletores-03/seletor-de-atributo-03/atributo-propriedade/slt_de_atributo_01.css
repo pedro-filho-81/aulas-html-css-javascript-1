@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* seletor universal */
+* {
+   margin: 5px 0;
+   padding: 0;
+   background-color: #000;
+   color: #fff;
+   box-sizing: border-box;
+}
+
+h1, h2, h3, footer {
+   width: 800px;
+   background-color: #00ffff;
+   color: #0000ff;
+   margin: 5px auto;
+   text-align: center;
+   padding: 8px;
+}
+
+p, pre {
+   width: 800px;
+   background-color: #fff;
+   color: #0000ff;
+   margin: 5px auto;
+   font-size: 25px;
+}
+
+mark {
+   background-color: #ffff00;
+   color: #000;
+   font-weight: bold;
+}
+
+/* 
+   seletor de atributo usando apenas a 
+   (propriedade [title]), desta maneira 
+   todos os parágrafos com essa propriedade 
+   são afetadas por essa regra CSS3.
+*/
+[title] {
+   color: red;
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* cria o seletor universal para: */
+* {
+   margin: 5px 0; /* retira as margens do doc. Html */
+   padding: 0; /* retira o preenchimento de todas as tag Html */
+   background-color: #000; /* cor do fundo preta */
+   color: #fff; /* cor das letras brancas */
+   font-size: 20px; /* almenta o tamanho da fonte em 20 pixel */
+   box-sizing: border-box;
+}
+
+/* cria o seletor de tipo h1 */
+h1, h2, footer {
+   background-color: aqua; /* cor do fundo aqua */
+   color: blue; /* cor das letras azul */
+   width: 800px;
+   margin: 5px auto;
+   text-align: center; /* alinha o texto ao centro */
+   font-size: 30px; /* Tamanho da fonte 30 pixel */
+   padding: 8px; /* preenchimento total 8 pixel */
+}  
+
+/* cria o seletor de tipo parágrafo */
+p, pre {
+   background-color: #fff;
+   color: blue;
+   width: 800px;
+   text-align: justify;
+   font-size: 25px;
+   font-weight: bold;
+   padding: 8px;
+   margin: 0 auto;
+}
+
+pre {
+   width: 800px;
+   margin: 0 auto;
+}

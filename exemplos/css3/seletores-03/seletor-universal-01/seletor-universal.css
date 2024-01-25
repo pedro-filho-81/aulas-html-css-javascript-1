@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* cria o seletor universal */
+* {
+   margin: 0; /* retira as margens do doc. Html */
+   padding: 0; /* retira o preenchimento de todas as tag Html */
+   background-color: #000; /* cor do fundo preta */
+   color: #fff; /* cor das letras brancas */
+
+   font-size: 20px; /* almenta o tamanho da fonte em 20 pixel */
+}
