@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {
+   margin: 0; /* retora as margens da página */
+   padding: 0; /* retira o preenchimento dos elementos */
+   box-sizing: border-box;
+}
+
+/* ESTILIZA O CORPO DA PÁGINA */
+body {
+   background-color: #e7e7e7;
+   color: #0000ff;
+   margin: 0;                         ;
+   padding-top: 100px; /* afasta o texto 100 pixel do topo. */
+}
