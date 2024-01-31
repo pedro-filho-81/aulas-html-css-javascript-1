@@ -1,15 +1,43 @@
 @charset "utf-8";
 
+/* SELETOR UNIVERSAL - Estiliza tudo */
 * {
-   margin: 0; /* retora as margens da página */
-   padding: 0; /* retira o preenchimento dos elementos */
+   margin: 0; /* retira a margem de todos os elementos */
+   padding: 0; /* retira o preenchimento de todos os elementos Html */
    box-sizing: border-box;
 }
 
 /* ESTILIZA O CORPO DA PÁGINA */
 body {
-   background-color: #e7e7e7;
-   color: #0000ff;
-   margin: 0;                         ;
+   background-color: #e7e7e7; /* cor do fundo */
+   color: #0000ff; /* cor das letras */
+   margin: 0; /* continua com a margin zero */                         
    padding-top: 100px; /* afasta o texto 100 pixel do topo. */
+}
+
+/* ESTILIZA O CABEÇALHO */
+header {
+   display: flex; /* alinha as tags Html lado a lado */
+   align-items: center; /* alinha os itens ao centro */
+   margin-bottom: 40px; /* afasta as tags Html abaixo do header 40px */
+}
+
+/* ESTILIZA A ImAGEm DO HEADER */
+header img {
+   height: 36px; /* Altura da imagem 36 pixel */
+   margin-right: 16px; /* Afasta o cabeçalho da logo 16 pixel */
+}
+
+/* ESTILIZA A TAG h1 DO HEADER */
+header h1 {
+   font-size: 40px; /* Almenta o tamanho da fonte em 40 pixel */
+   font-weight: bold; /* coloca a fonte em negrito */
+}
+
+/* ESTILIZA O CONTAINER - DIV QUE ENVOLVE O PROGRAmA */
+.container {
+   background-color: #cbcbcb; /* cor do fundo cinza claro */
+   max-width: 960px; /* largura máxima do container 960 pixel */
+   width: 100%; /* A largura é 100% da largura máxima  */
+   margin: 0 auto;
 }
