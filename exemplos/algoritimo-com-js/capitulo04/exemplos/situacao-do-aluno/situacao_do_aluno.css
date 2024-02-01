@@ -2,7 +2,7 @@
 
 /* SELETOR UNIVERSAL - Estiliza tudo */
 * {
-   margin: 0; /* retira a margem de todos os elementos */
+   margin: 0; /* retira a margem de todos os elementos Html */
    padding: 0; /* retira o preenchimento de todos os elementos Html */
    box-sizing: border-box;
 }
@@ -12,32 +12,70 @@ body {
    background-color: #e7e7e7; /* cor do fundo */
    color: #0000ff; /* cor das letras */
    margin: 0; /* continua com a margin zero */                         
-   padding-top: 100px; /* afasta o texto 100 pixel do topo. */
+   /* padding-top: 100px; /* afasta o texto 100 pixel do topo. */
 }
 
-/* ESTILIZA O CABEÇALHO */
+/* ESTILIZA O CABEÇALHO (header) */
 header {
+   background-color: #0000ff; /* cor do fundo */
+   color: #ffffff; /* cor das letras */
    display: flex; /* alinha as tags Html lado a lado */
-   align-items: center; /* alinha os itens ao centro */
-   margin-bottom: 40px; /* afasta as tags Html abaixo do header 40px */
+   padding: 15px; 
+   text-align: center; /* alinha os itens ao centro */
+   margin-bottom: 4px; /* afasta as tags Html abaixo do header */
 }
 
 /* ESTILIZA A ImAGEm DO HEADER */
 header img {
+   float: left; /* coloca a logo do lado esquerdo */
+   color: #ffffff;
    height: 36px; /* Altura da imagem 36 pixel */
-   margin-right: 16px; /* Afasta o cabeçalho da logo 16 pixel */
+   margin-right: 180px;
 }
 
 /* ESTILIZA A TAG h1 DO HEADER */
 header h1 {
    font-size: 40px; /* Almenta o tamanho da fonte em 40 pixel */
    font-weight: bold; /* coloca a fonte em negrito */
+   text-align: center; /* Alinha o texto */
 }
 
-/* ESTILIZA O CONTAINER - DIV QUE ENVOLVE O PROGRAmA */
+/* ESTILIZA A CLASSE CONTAINER QUE ENVOLVE O PROGRAmA */
 .container {
    background-color: #cbcbcb; /* cor do fundo cinza claro */
    max-width: 960px; /* largura máxima do container 960 pixel */
    width: 100%; /* A largura é 100% da largura máxima  */
    margin: 0 auto;
+}
+
+/* ESTILIZA O QUESTIONÁRIO - SELETOR CLASS */
+.questionario {
+   background-color: #ffffff; /* cor do fundo */
+   margin-bottom: 8px; /* margem inferior */
+}
+
+/* ESTILIZA A TAG H2 DA CLASSE QUESTIONÁRIO */
+.questionario h2 {
+   font-size: 35px; /* tamanho da fonte */
+   font-weight: bold; /* fonte em negrito */
+   text-align: center; /* alinhamento do texto */
+   margin: 0 auto; /* centraliza o conteúdo */
+   padding: 10px; /* preenche os espaços ao redor do conteúdo */
+}
+
+/* ESTILIZA A TAG P DA CLASSE QUESTIONÁRIO */
+.questionario p {
+   font-size: 30px;
+   text-align: justify;
+   text-indent: 50px; /* Identação da primeira linha */
+   margin: 0 30px;
+}
+
+/* ESTILIZA O FORmULÁRIO */
+form {
+   background-color: #ffffff;
+   color: #000;
+   font-size: 30px;
+   padding: 10px;
+   border: 1px solid #000;
 }
