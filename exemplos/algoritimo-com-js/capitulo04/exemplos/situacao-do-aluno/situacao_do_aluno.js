@@ -20,12 +20,12 @@ frm.addEventListener("submit", (e) => {
    const media = (nota1 + nota2) / 2;
 
    // exibe a média
-   resp1.innerText = `A média das notas é: ${media.toFixed(2)}`;
+   resp1.innerText = `A média das notas é: ${media.toFixed(1)}`;
 
    // Condição para ser aprovado
    // se a nota for maior ou igual a sete
    if(media >= 7) {
-      resp2.innerHTML = `Parabéns! Você ${nome} foi aprovado(a).`;
+      resp2.innerHTML = `Parabéns! ${nome} você foi aprovado(a).`;
       resp2.style.color = "blue";
    } else if(media >= 4) {
       resp2.innerText = `Atenção ${nome}. Você está em exame.`;
@@ -34,4 +34,13 @@ frm.addEventListener("submit", (e) => {
       resp2.innerHTML = `Ops! ... ${nome} você foi reprovado(a)`;
       resp2.style.color = 'red';
    }
+
+   // limpa os campos após o resultado
+   frm.inpNome.value = '';
+   frm.inpNota1.value = '';
+   frm.inpNota2.value = '';
+
+   // coloca o foco no id="inpNome"
+   frm.inpNome.focus();
+
 })
