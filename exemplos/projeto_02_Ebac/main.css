@@ -61,7 +61,7 @@ form button { /* BOTÃO */
    font-size: 24px; /* TAmANHO DA FONTE */
    font-weight: bold; /* PESO DA FONTE NEGRITO */
    border: none; /* RETIRA AS BORDAS */
-   padding: 8PX; /* ENCHImENTO DE 8 PIXEL */
+   padding: 8px; /* ENCHImENTO DE 8 PIXEL */
 }
 
 /* ESTILIZA A TABELA */

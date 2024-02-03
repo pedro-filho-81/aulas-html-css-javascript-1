@@ -26,28 +26,33 @@
          </section>
 
          <form action="#">
-            <p>
-               <label for="inpNome">Nome do aluno:
-                  <input type="text" id="inpNome" autofocus required>
-               </label>
-            </p>
-            <p>
-               <label for="inpNota1">1ª Nota:
-                  <input type="number" name="inpNota1" id="inpNota1" min="0" max="10" step="0.01" required>
-               </label>
-            </p>
-            <p>
-               <label for="inpNota2">2ª Nota:
-                  <input type="number" name="inpNota2" id="inpNota2" min="0" max="10" step="0.01" required>
-               </label>
-            </p>
-            <input type="submit" value="Exibir média e situação: ">
+            <fieldset>
+               <legend>Dados do Aluno</legend>
+               <p>
+                  <label for="inpNome">Nome: 
+                     <input type="text" id="inpNome" autofocus required>
+                  </label>
+               </p>
+               <p>
+                  <label for="inpNota1">1ª Nota:
+                     <input type="number" name="inpNota1" id="inpNota1" min="0" max="10" step="0.01" required>
+                  </label>
+               </p>
+               <p>
+                  <label for="inpNota2">2ª Nota:
+                     <input type="number" name="inpNota2" id="inpNota2" min="0" max="10" step="0.01" required>
+                  </label>
+               </p>
+               <input type="submit" value="Exibir média" id="botao">
+            </fieldset>
          </form>
 
-         <secti>
+         <section class="resultado">
+            <h2>Resulutado</h2>
             <h3>média</h3>
             <h4>Situação</h4>
          </section>
+
       </main>
 
       <footer>
