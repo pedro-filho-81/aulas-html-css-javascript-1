@@ -89,7 +89,7 @@ form {
 fieldset {
    display: flex; /* Exibe os elementos em linha */
    justify-content: space-between; /* promove o espaço entre o conteúdo */
-   padding: 20px; /* preenchimento ao redor dos elementos. */
+   padding: 15px; /* preenchimento ao redor do conteúdo */
    border: solid #0b0bf98e;
 }
 
