@@ -36,7 +36,7 @@ frm.addEventListener("submit", (e) => {
 // cria o "ouvinte" do evento, quando o botão lipar for clicado
 frm.addEventListener("reset", () => {
 
-   resp.innerText = ''; // limpa o conteúdo do elemento h3 que exibe a resposta
+   resp.innerText = 'Peso ideal'; // limpa o conteúdo do elemento h3 que exibe a resposta
    resp.style.backgroundColor = "white"; // coloca a cor do fundo como branca
 
 }) // final

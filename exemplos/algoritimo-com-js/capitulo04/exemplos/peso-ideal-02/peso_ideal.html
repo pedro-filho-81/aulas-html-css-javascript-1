@@ -6,6 +6,7 @@
    <title>Programa Cálculo do Peso Ideal</title>
    <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
    <link rel="stylesheet" href="./css/peso_ideal_02.css">
+   
 </head>
 <body>
    <div class="container">
@@ -30,16 +31,17 @@
                   <legend>Cálculo do Peso Ideal</legend>
                   <p>
                      <label for="inpNome">Nome: 
-                        <input type="text" id="inpNome" autofocus required>
+                        <input type="text" id="inpNome" nome="inpNome" autofocus required>
                      </label>
                   </p>
                   <p>
-                     <label for="inpMasculino">Sexo: 
-                        <input type="radio" id="inpMasculino">Masculino
-                     </label>
-                     <label for="inpFeminino">
-                        <input type="radio" id="inpFeminino" required>Feminino
-                     </label>
+                     <label for="#">Sexo: </label>
+                        <input type="radio" id="inpMasculino" nome="inpNome"  value="Masculino">
+                     <label for="#">Masculino  </label>
+                     
+                        <input type="radio" id="inpFeminino" nome="inpFeminino"  value="Feminino">
+                     <label for="inpFeminino">Feminino</label>
+                     
                   </p>
                   <p>
                      <label for="inpAltura">Altura:                      <input type="number" name="inpAltura" id="inpAltura" min="0" step="0.01" required>

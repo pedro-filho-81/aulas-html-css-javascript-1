@@ -1,5 +1,5 @@
 /*
-   Este arquivo .CSS NÃO FAZ PARTE DO LIVRO (Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition) Novatec Editora. Kindle.), FOI COLOCADO AQUI PORQUE ESTOU APRENDENDO CSS3 TAmBÉm.
+   Este arquivo .CSS NÃO FAZ PARTE DO LIVRO (Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript -  2ª Edição: (Portuguese Edition) Novatec Editora. Kindle.), FOI COLOCADO AQUI PORQUE ESTOU APRENDENDO CSS3 TAmBÉm.
 */
 
 @charset "utf-8";
@@ -144,7 +144,7 @@ form #botao:hover {
 }
 
 /* ESTILIZA AS TAGs h2, h3, h4 da classe */
-.resultado h2, h3, h4 {
+.resultado h2, h3 {
    padding: 10px;
 }
 
