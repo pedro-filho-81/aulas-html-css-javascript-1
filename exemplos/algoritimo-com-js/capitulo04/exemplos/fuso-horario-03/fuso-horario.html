@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Programa Fuso Horário</title>
+   <!--FAVICON-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+   <!--ADICIONA O CSS, ESTE NÃO É EXP DO LIVRO-->
+   <link rel="stylesheet" href="../css/main.css">
+   
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/ex4_4.jpg" alt="imagem do globo terrestre">
+         <h1>Programa Fuso Horário</h1>
+      </header>
+      
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               a) Sabendo que o fuso horário da França em relação ao Brasil é de + 5 horas (no horário de verão na França), elaborar um programa que leia a hora no Brasil e informe a hora na França. A Figura 4.4 ilustra a tela com dados de entrada e saída do programa.
+            </p>
+         </section>
+
+         <section id="formulario">
+            <img src="../img/ex4_4.jpg" alt="Globo Terrestre">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Fuso Horário</legend>
+                  <p>
+                     <label for="inpHoraBrasil">Hora no Brasil (h.m): 
+                        <input type="number" id="inpHoraBrasil" nome="inpHoraBrasil" min="0" max="23.59" step="0.01" autofocus required>
+                     </label>
+                  </p>
+                  <p>
+                  <input type="submit" value="Exibir Hora na França" id="submit">
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resulutado</h2>
+            <h3>Exibe o hotário na França</h3>
+         </section>
+      </main>
+
+      <footer>
+         &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition) Novatec Editora. Kindle. 
+      </footer>
+   </div>
+
+   <!--Vincula a página Html com arquivo JS-->
+   <script src="./js/fuso_horario.js"></script>
+
+</body>
+</html>
