@@ -2,7 +2,6 @@
 const frm = document.querySelector("form");
 const resp = document.querySelector("h3");
 
-
 let raizQuadrada; // vARIável para calcular a raiz de um número
 
 frm.addEventListener("submit", (e) =>{
