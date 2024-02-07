@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Programa Raiz Quadrada</title>
+   <!--FAVICON-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+   <!--ADICIONA O CSS, ESTE NÃO É EXP DO LIVRO-->
+   <link rel="stylesheet" href="../css/main.css">
+   
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/ex4_5.jpg" alt="Raiz Quadrada">
+         <h1>Programa Raiz Quadrada</h1>
+      </header>
+      
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               b) Elaborar um programa que leia um número e calcule sua raiz quadrada. Caso a raiz seja exata (quadrados perfeitos), informá-la, caso contrário, informe: ‘Não há raiz exata para ..’. A Figura 4.5 ilustra uma execução desse programa.
+            </p>
+         </section>
+
+         <section id="formulario">
+            <img src="../img/ex4_5.jpg" alt="Raiz Quadrada">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Raiz Quadrada</legend>
+                  <p>
+                     <label for="inpNumero">Número: 
+                        <input type="number" id="inpNumero" nome="inpNumero" min="2" step="0.01" autofocus required>
+                     </label>
+                  </p>
+                  <p>
+                  <input type="submit" value="Exibir Raiz Quadrada" id="submit">
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resulutado</h2>
+            <h3>Exibe a raiz quadrada de um número.</h3>
+         </section>
+      </main>
+
+      <footer>
+         &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition) Novatec Editora. Kindle. 
+      </footer>
+   </div>
+
+   <!--Vincula a página Html com arquivo JS-->
+   <script src="./js/raiz_quadrada.js"></script>
+
+</body>
+</html>
