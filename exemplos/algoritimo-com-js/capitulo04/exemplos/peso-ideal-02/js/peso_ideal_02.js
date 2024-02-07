@@ -16,20 +16,23 @@ frm.addEventListener("submit", (e) => {
 
    // declara a variável peso
    let peso = 0;
-
+   let sexo = '';
+   
    // condições, se masculino for verdadeiro ou (if(masculino == true))
    if(masculino) {
       // peso recebe o valor do cálculo para hoMeM
       peso = 22 * Math.pow(altura, 2); 
       resp.style.backgroundColor = "yellow";
+      sexo = "Masculino";
    } else { // se não
       // peso recebe o valor do cálculo para Mulher
       peso = 21 * Math.pow(altura, 2);
       resp.style.backgroundColor = "pink";
+      sexo = "Feminino";
    } // fiM if
 
    // apresenta a resposta alterando o conteúdo da tag h3
-   resp.innerText = `${nome}: seu peso ideal é: ${peso.toFixed(2)}Kg.`;
+   resp.innerText = `${nome}: sexo: ${sexo}, seu peso ideal é: ${peso.toFixed(2)}Kg.`;
 
 }) // fiM addEventListener
 
