@@ -100,7 +100,7 @@ form {
 fieldset {
    width: 640px;
    height: 280px;
-   display: block; /* Exibe os elementos em linha */
+   display: block; /* Exibe os elementos em bloco */
    padding: 20px; /* preenchimento ao redor dos elementos. */
    border: solid #0b0bf98e;
 }
@@ -130,7 +130,7 @@ form #botao {
    QUANDO PASSA O mOUSE POR CImA 
 */
 form #botao:hover {
-   background-color: #a6c5ee;
+   background-color: #ffff00;
    color: #0000ff;   
 }
 
