@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* Estiliza as divs */
+div {
+   width: 200px;
+   height: 120px;
+   border: 1px solid #000;
+   float: left;
+   margin: 10px 15px;
+   /* adiciona uma imagem no Html via backgrund */
+   background: url(../img/real.png);
+}
+
+/* Estiliza a div 1 */
+div.um {
+   /* repeta a imagem */
+   background-repeat: repeat;
+}
+
+/* Estiliza a div 2 */
+div.dois {
+   /* repeat-x => repete a imagem no topo da div */
+   background-repeat: repeat-x;
+}
+
+/* Estiliza a div 3 */
+div.tres {
+   /* repeat-y => repete a imagem no lado esquerdo da div */
+   background-repeat: repeat-y;
+}
+
+/* Estiliza a div 4 */
+div.quatro {
+   /* no-repeat => não repete a imagem, exibe apenas uma na posição inicial */
+   background-repeat: no-repeat;
+}
+
+/* Estiliza a div 5 */
+div.cinco {
+   /* space => coloca espaço entre a imagem encostam nas bordas internas do box  */
+   background-repeat: space;
+}
+
+/* Estiliza a div 6 */
+div.seis {
+   /* round => repete as imagens, de modo a que elas encostem nas bordas internas */
+   background-repeat: round;
+}
