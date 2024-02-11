@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* estiliza hgroup, h1, h2 e p */
+hgroup, h1, h2, p {
+   /* borda de 1pixel solida preta */
+   border:  1px solid black;
+   /* preenchimento de 10 pixel */
+   padding: 10px;
+}
+
+/* Estiliza o header */
+header {
+   /* fundo cinza excuro */
+   background-color: #999; /* cinza escuro */
+   /* borda de 5 pixel */
+   border: 5px dashed black;
+   padding: 10px; /* pereenchimento */
+}
+
+/* Estiliza o h1 */
+h1 {background-color: #ccc;} /* cinza claro */
+
+/* Estiliza o parágrafo */
+p {background-color: #ccc;} /* cinza claro */
+
+/* Estiliza o hgroup */
+hgroup {
+   background-color: #fff; /* branco */
+}
