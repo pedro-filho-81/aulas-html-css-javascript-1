@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Seletor Propriedade e Valor CSS3</title>
+   <style>
+      p[lang|="pt"] {
+         width: 500px;
+         background-color: yellow;
+         color: blue;
+         font-size: 25px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Seletor CSS3 Tag, Propriedade e Valor</h1>
+   </header>
+
+   <main>
+   <h2>Exemplo CSS</h2>
+   <p> p - é a tag, [title] á apropriedade, e ="Terceiro paragrafo" é o valor.</p>
+   <p>O Exemplo CSS abaixo estiliza o terceiro parágrafo com o fundo amarelo e as letras azuis.</p>
+   <pre>
+   &lt;style&gt;
+      /* Estiliza o terceiro parágrafo */
+      p[title="Terceiro paragrafo"] {
+         background-color: yellow;
+         color: blue;
+         font-size: 25px;
+      }
+   &lt;/style></pre>
+
+   <p lang="en">Texto do primeiro parágrafo</p>
+   <p lang="pt-br">Texto do sequndo parágrafo.</p>
+   <p lang="pt">Texto do Terceiro parágrafo.</p>
+   <p>Texto do quarto parágrafo.</p>
+   </main>
+</body>
+</html>
