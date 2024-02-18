@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O Seletor Class</title>
+   <style>
+      
+         /* Casa com o elemento com o valor do atributo class igual a exemplo */
+      .exemplo {
+         background-color: yellow;
+         color: green;
+      }
+      h1.exemplo {
+         background-color: green;
+         color: yellow;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>O Seletor Class</h1>
+      <p>O seletor class é aquele que a string é especificada com um ponto antes dela.</p>
+   </header>
+
+   <main>
+      <h3>Exemplo Class</h3>
+      <pre>
+         /* C S S */
+         /* Casa com o elemento com o valor do atributo class igual a exemplo */
+      <strong>.exemplo</strong> {
+         background-color: yellow;
+         color: green;
+      }
+      <strong>h1.exemplo</strong> {
+         background-color: green;
+         color: yellow;
+      }
+
+      /* H T m L*/
+      &lt;<strong>h1 class="exemplo</strong> destaque">
+         Exemplo do Seletor Class.
+      &lt;/h1>
+      &lt;p <strong>class="exemplo"</strong>>
+         Texto do primeiro parágrafo
+      &lt;/p>
+      &lt;p>
+         Texto do segundo parágrafo.
+      &lt;/p>
+      &lt;p <strong>class="exemplo</strong> destaque">
+         Texto do terceiro parágrafo.
+      &lt;/p>
+      </pre>
+
+      <h1 class="exemplo destaque">Exemplo do Seletor Class</h1>
+      <p class="exemplo">Texto do primeiro parágrafo</p>
+      <p>Texto do segundo parágrafo.</p>
+      <p class="exemplo destaque">
+         Texto do terceiro parágrafo.
+      </p>
+   </main>
+   
+</body>
+</html>
