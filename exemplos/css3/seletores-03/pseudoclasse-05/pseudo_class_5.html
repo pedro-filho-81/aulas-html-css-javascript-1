@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Seletor Pseudoclasse CSS</title>
+   <link rel="shortcut icon" href="C:\aulas-html-css-javascript\exemplos\img\livrojs.png" type="image/x-icon">
+   <style>
+      :link { color: blue; } /* Links não visitados serão na cor azul */ 
+      :focus { color: white; } /* Elementos que ganham o foco serão na cor branca */ 
+      a.externo:visited { color: red; } /* Links externos que já tenham sido visitados serão na cor vermelha */ 
+      a:focus:visited { color: green; } /* É válido definir mais de uma pseudoclasse */
+      a:hover { background-color: black; color: white;} /* ao passar o mause por cima muda a cor das letras para cinza  */
+      p:hover {background-color: green; color: yellow;}
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Seletor Pseudoclasse CSS</h1>
+      <p></p>
+   </header>
+
+   <main>
+      <pre>
+   /* C S S */
+   :link { color: blue; } /* Links não visitados serão na cor azul */ 
+   :focus { color: white; } /* Elementos que ganham o foco serão na cor branca */ 
+   a.externo:visited { color: red; } /* Links externos que já tenham sido visitados serão na cor vermelha */ 
+   a:focus:visited { color: green; } /* É válido definir mais de uma pseudoclasse */
+   a:hover { color: gray;} /* ao passar o mause por cima muda a cor das letras para cinza  */
+   p:hover {background-color: green; color: yellow;}
+
+   /* H T M L */
+   Clique nos links abaixo e vá para a página.
+   &lt;a href ="https://www.maujor.com/" target="_blank"> Site do maujor &lt;/a>&lt;br>
+   &Lt;a href="https://www.w3schools.com/html/" target="_blank">w3schools Html&lt;/a>&lt;br>
+   &lt;a href="https://www.google.com.br/" target="_blank">Google&lt;/a>
+   </pre>
+
+   <h2>Exemplo Html</h2>
+   <p>Clique nos links abaixo e vá para a página.</p>
+      <a href ="https://www.maujor.com/" target="_blank"> Site do maujor </a><br>
+      <a href="https://www.w3schools.com/html/" target="_blank">w3schools Html</a><br>
+      <a href="https://www.google.com.br/" target="_blank">Google</a>
+   </main>
+
+   <footer>
+      &copy; Silva, Mauricio Samy. CSS3 (p. 124). Novatec Editora. Edição do Kindle. 
+   </footer>
+</body>
+</html>
