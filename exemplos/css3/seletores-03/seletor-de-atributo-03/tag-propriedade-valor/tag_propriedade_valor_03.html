@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Seletor Propriedade e Valor CSS3</title>
+   <style>
+      p[class|="dest"] {
+         width: 500px;
+         background-color: yellow;
+         color: green;
+         font-size: 25px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Seletor CSS3 Tag, Propriedade e Valor</h1>
+   </header>
+
+   <main>
+   <h2>Exemplo CSS</h2>
+   <p> p - é a tag, [title] á apropriedade, e ="Terceiro paragrafo" é o valor.</p>
+   <p>O Exemplo CSS abaixo estiliza o terceiro parágrafo com o fundo amarelo e as letras azuis.</p>
+   <pre>
+   &lt;style&gt;
+      /* Estiliza o terceiro parágrafo */
+      p[class|="dest"] {
+         width: 500px;
+         background-color: yellow;
+         color: green;
+         font-size: 25px;
+      }
+   &lt;/style></pre>
+
+   <p>
+      No exemplo mostrado, os textos do primeiro, terceiro e quinto parágrafos serão na cor verde (green), conforme definido na regra CSS.
+   </p>
+   <p class="dest-um">Texto do primeiro parágrafo</p>
+   <p class="dest_dois">Texto do sequndo parágrafo.</p>
+   <p class="dest-destaque">Texto do Terceiro parágrafo.</p>
+   <p class="destemido">Texto do quarto parágrafo.</p>
+   <p class="dest">Texto do quinto parágrafo.</p>
+   </main>
+</body>
+</html>
