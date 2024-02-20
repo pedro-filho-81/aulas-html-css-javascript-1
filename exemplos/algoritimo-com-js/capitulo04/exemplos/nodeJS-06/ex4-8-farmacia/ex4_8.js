@@ -17,4 +17,4 @@ const valorParcela = valor / parcelas;
 
 // exibe resultado
 console.log(`Pode pagar em ${parcelas} x ${valorParcela.toFixed(2)}`);
-// C:\aulas-html-css-javascript\exemplos\algoritimo-com-js\capitulo04\exemplos\nodeJS-06
+// C:\aulas-html-css-javascript\exemplos\algoritimo-com-js\capitulo04\exemplos\nodeJS-06 
