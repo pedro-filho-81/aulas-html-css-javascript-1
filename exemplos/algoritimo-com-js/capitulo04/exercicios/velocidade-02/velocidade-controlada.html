@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Programa Velocidade Controlada</title>
+   <!--FAVICON-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+   <!--CSS-->
+   <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/exerc.jpg" alt="">
+         <h1>Programa Velocidade Controlada</h1>
+      </header>
+
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               b) Elaborar um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor. Se a velocidade for inferior ou igual à permitida, exiba “Sem Multa”. Se a velocidade for de até 20% maior que a permitida, exiba “Multa Leve”. E, se a velocidade for superior a 20% da velocidade permitida, exiba “Multa Grave” – conforme ilustra a Figura 4.8.
+            </p>
+         </section>
+
+         <section id="formulario">
+            <img src="../img/exerc.jpg" alt="Folha de papel">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Velocidade Controlada</legend>
+
+                  <label for="inpVelocidade">Velocidade permitida</label>
+                  <input type="number" id="inpVeloPermitida" name="inpVelocidade" min="0" required autofocus>
+
+                  <label for="#">Velocidade condutor</label>
+                  <input type="number" id="inpVeloCondutor" name="inpVeloCondutor" min="0" required>
+
+                  <input type="submit" value="Verificar Velocidade" id="botao">
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resultado</h2>
+            <h3>Controle de velociadade</h3>
+         </section>
+
+         <footer>
+            &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition). Novatec Editora. Ed. Kindle. 
+         </footer>
+      </main>
+   </div>
+   <script src="./js/velocidade-controlada.js"></script>
+</body>
+</html>
