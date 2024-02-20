@@ -1,0 +1,158 @@
+/*
+   Este arquivo .CSS NÃO FAZ PARTE DO LIVRO (Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript -  2ª Edição: (Portuguese Edition) Novatec Editora. Kindle.), FOI COLOCADO AQUI PORQUE ESTOU APRENDENDO CSS3 TAmBÉm.
+*/
+
+@charset "utf-8";
+
+/* SELETOR UNIVERSAL - Estiliza tudo */
+* {
+   margin: 0; /* retira a margem de todos os elementos Html */
+   padding: 0; /* retira o preenchimento de todos os elementos Html */
+   box-sizing: border-box;
+}
+
+/* ESTILIZA O CORPO DA PÁGINA */
+body {
+   background-color: #b7b7b7; /* cor do fundo */
+   color: #0000ff; /* cor das letras */                         
+   padding-top: 20px; /* afasta o texto 100 pixel do topo. */
+}
+
+/* ESTILIZA O CABEÇALHO (header) */
+header {
+   background-color: #0000ff; /* cor do fundo */
+   color: #ffffff; /* cor das letras */
+   display: flex; /* alinha as tags Html lado a lado */
+   padding: 15px; 
+   text-align: center; /* alinha os itens ao centro */
+   margin-bottom: 4px; /* afasta as tags Html abaixo do header */
+}
+
+/* ESTILIZA A ImAGEm (LOGO) DO HEADER */
+header img {
+   float: left; /* coloca a logo do lado esquerdo */
+   color: #ffffff;
+   height: 36px; /* Altura da imagem 36 pixel */
+   margin-right: 180px; /* Coloca o texto a 180 pixel da logo */
+}
+
+/* ESTILIZA A TAG h1 DO HEADER */
+header h1 {
+   font-size: 40px; /* Almenta o tamanho da fonte em 40 pixel */
+   font-weight: bold; /* coloca a fonte em negrito */
+   text-align: center; /* Alinha o texto */
+}
+
+/* ESTILIZA A CLASSE CONTAINER QUE ENVOLVE O PROGRAmA () */
+.container {
+   background-color: #cbcbcb; /* cor do fundo cinza claro */
+   max-width: 960px; /* largura máxima do container 960 pixel */
+   width: 100%; /* A largura é 100% da largura máxima  */
+   margin: 0 auto; /* centraliza o programa */
+}
+
+/* ESTILIZA O QUESTIONÁRIO - SELETOR CLASS */
+.questionario {
+   background-color: #ffffff; /* cor do fundo */
+   margin-bottom: 8px; /* margem inferior */
+}
+
+/* ESTILIZA A TAG H2 DA CLASSE QUESTIONÁRIO */
+.questionario h2 {
+   font-size: 30px; /* tamanho da fonte */
+   font-weight: bold; /* fonte em negrito */
+   text-align: center; /* alinhamento do texto */
+   margin: 0 auto; /* centraliza o conteúdo */
+   padding: 10px; /* preenche os espaços ao redor do conteúdo */
+}
+
+/* ESTILIZA A TAG P DA CLASSE QUESTIONÁRIO */
+.questionario p {
+   font-size: 25px; /* tamanho das letras */
+   text-align: justify; /* alinha o texto */
+   text-indent: 50px; /* Identação da primeira linha */
+   margin: 0 30px; /* cria a margem do lado esquerdo e direito */
+}
+
+/* ESTILIZA A SECÇÃO FORmULÁRIO */
+#formulario {
+   display: flex; /* com os itens lado a lado */
+}
+
+/* ESTILIZA A ImAGEm COm */
+#formulario img {
+   width: 300px; /* 300 pixel de largura e */
+   height: 300px; /* 300 pixel de altura */
+}
+
+/* ESTILIZA O FORmULÁRIO */
+form {
+   background-color: #ffffff; 
+   color: #000;
+   font-size: 30px;
+   padding: 10px;
+   margin-bottom: 8px;
+}
+
+/*
+   O elemento Html fieldset é usado para agrupar dados relacionados em um formulário, e o elemento legend define uma legenda para o elemento fieldset.
+*/
+fieldset {
+   width: 640px;
+   height: 280px;
+   display: block; /* Exibe os elementos em bloco */
+   padding: 20px; /* preenchimento ao redor dos elementos. */
+   border: solid #0b0bf98e;
+}
+
+/* ESTILIZA A LEGEND */
+legend {
+   color: #0000ff;
+}
+
+/* ESTILIZA A TAG INPUT DO FORm */
+form input {
+   font-size: 18px;
+   margin-bottom: 15px;
+   padding: 8px;
+}
+
+/* ESTILIZA O BOTÃO DO FORmULÁRIO */
+form #botao {
+   background-color: #0000ff;
+   color: #ffffff;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+/* 
+   ESTILIZA O BOTÃO DO FORmULÁRIO 
+   QUANDO PASSA O mOUSE POR CImA 
+*/
+form #botao:hover {
+   background-color: #ffff00;
+   color: #0000ff;   
+}
+
+/* ESTILIZA classe RESULTADO */
+.resultado {
+   background-color: #ffffff;
+   text-align: center;
+   font-size: 25px;
+   padding: 15px;
+   margin-bottom: 8px;
+}
+
+/* ESTILIZA AS TAGs h2, h3, h4 da classe */
+.resultado h2, h3 {
+   padding: 10px;
+}
+
+/* ESTILIZA A TAG FOOTER */
+footer {
+   background-color: #0000ff;
+   color: #ffffff;
+   font-size: 16px;
+   padding: 12px;
+   margin-bottom: 10px;
+}
