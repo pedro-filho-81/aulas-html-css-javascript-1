@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Programa Par ou Ímpar</title>
+   <!--FAVICON-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+   <!--ADICIONA O CSS, ESTE NÃO É EXP DO LIVRO-->
+   <link rel="stylesheet" href="../css/main.css">
+   
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/exerc.jpg" alt="Caixa Eletrônico">
+         <h1>Programa Par ou Ímpar</h1>
+      </header>
+      
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               a) Elaborar um programa que leia um número. Informe se ele é par ou ímpar. Faça com o if... else... tradicional e, após, tente criar a condição com o operador ternário. A Figura 4.7 ilustra a tela de execução do programa. Para os exercícios, foi utilizada uma figura padrão, mas você pode substituí-la caso tenha interesse.
+            </p>
+         </section>
+
+         <section id="formulario">
+            <img src="../img/exerc.jpg" alt="Caixa Eletrônico">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Par ou Ímpar</legend>
+                  <p>
+                     <label for="inpValor">Número:  
+                        <input type="number" id="inpValor" nome="inpValor" min="0" autofocus required>
+                     </label>
+                  </p> 
+                  <p>
+                  <input type="submit" value="Verificar se é par ou ímpar" id="botao">
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resultado</h2>
+            <h3 id="outResp1">Par ou Ímpar.</h3>
+         </section>
+      </main>
+
+      <footer>
+         &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition) Novatec Editora. Kindle. 
+      </footer>
+   </div>
+
+   <!--Vincula a página Html com arquivo JS-->
+   <script src="./javascript/par_ou_impar.js"></script>
+
+</body>
+</html>
