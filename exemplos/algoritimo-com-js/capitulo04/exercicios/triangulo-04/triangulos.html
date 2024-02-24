@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Programa Lados de um Triângulo</title>
+
+   <!--FAVICOm-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+
+   <!--CSS EXTERNO-->
+   <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/exerc.jpg" alt="Folha de papel">
+         <h1>Programa Lados de um Triângulo</h1>
+      </header>
+
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               d) Elaborar um programa que leia três lados e verifique se eles podem ou não formar um triângulo. Para formar um triângulo, um dos lados não pode ser maior que a soma dos outros dois. Caso possam formar um triângulo, exiba também qual o tipo do triângulo: Equilátero (3 lados iguais), Isósceles (2 lados iguais) e Escaleno (3 lados diferentes). A Figura 4.10 exibe um exemplo de execução do exercício.
+            </p>
+         </section>
+         
+         <section id="formulario">
+            <img src="../img/exerc.jpg" alt="Folha de papel">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Lados de um Triângulo</legend>
+
+                  <label for="inpLadoA">Lado A: </label>
+                  <input type="number" id="inpLadoA" min="1" required autofocus><br>
+                  
+                  <label for="inpLadoB">Lado B: </label>
+                  <input type="number" id="inpLadoB" min="1" required autofocus><br>
+                  
+                  <label for="inpLadoC">Lado C: </label>
+                  <input type="number" id="inpLadoC" min="1" required autofocus><br>
+                  
+                  <input type="submit" id="botao" value="Verificar Lados">
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resultado</h2>
+            <h3>Podem formar um triângulo</h3>
+            <h4>Tipo do triângulo</h4>
+         </section>
+      </main>
+
+      <footer>
+         &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition). Novatec Editora. Kindle
+      </footer>
+   </div>
+
+   <script src="./js/triangulos.js"></script>
+   
+</body>
+</html>
