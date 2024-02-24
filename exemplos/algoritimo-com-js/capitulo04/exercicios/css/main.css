@@ -133,7 +133,9 @@ form #botao:hover {
    background-color: #ffff00;
    color: #0000ff;   
 }
-
+fieldset p {
+   float: right;
+}
 /* ESTILIZA classe RESULTADO */
 .resultado {
    background-color: #ffffff;
