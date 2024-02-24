@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Programa Parquímetro</title>
+   
+   <!--FAVICON-->
+   <link rel="shortcut icon" href="../img/livrojs.png" type="image/x-icon">
+   
+   <!--CSS EXTERNO-->
+   <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="../img/exerc.jpg" alt="Folha de papel">
+         <h1>Programa Parquímetro</h1>
+      </header>
+   
+      <main>
+         <section class="questionario">
+            <h2>Questionário</h2>
+            <p>
+               c) Elaborar um programa para simular um parquímetro, o qual leia o valor de moedas depositado em um terminal de estacionamento rotativo. O programa deve informar o tempo de permanência do veículo no local e o troco (se existir), como no exemplo da Figura 4.9. Se o valor for inferior ao tempo mínimo, exiba a mensagem: “Valor Insuficiente”. Considerar os valores/tempos da Tabela 4.6 (o máximo é 120 min). 
+            </p>
+         </section>
+   
+         <section id="formulario">
+            <img src="../img/exerc.jpg" alt="Folha de papel">
+
+            <form action="#">
+               <fieldset>
+                  <legend>Formulário Parquímetro</legend>
+                  
+                  <label for="inpValor">Valor R$:</label>
+                  <input type="number" id="inpValor"  min="1" max="10" step="0.01" required autofocus>
+
+                  <p>Valor  ----  Tempo<br>R$ 1,00 - 30min<br>R$ 1,75 - 60min<br>R$ 3,00 - 120min</p>
+                  
+                  <input type="submit" id="botao" value="Confirma Depósito">
+
+                  <p><br><mark>OBS:</mark> <strong>Troco até R$ 10,00<br>Tempo máximo 120 minutos</strong></p>
+                  
+               </fieldset>
+            </form>
+         </section>
+
+         <section class="resultado">
+            <h2>Resultado</h2>
+            <h3>Tempo em minutos</h3>
+            <h4>Troco em dinheiro</h4>
+         </section>
+      </main>
+      
+      <footer>
+         &copy; Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: (Portuguese Edition). Novatec Editora. Kindle. 
+      </footer>
+   </div>
+   
+   <!--JAVASCRIPT EXTERNO-->
+   <script src="./js/parquimetro.js"></script>
+</body>
+</html>
