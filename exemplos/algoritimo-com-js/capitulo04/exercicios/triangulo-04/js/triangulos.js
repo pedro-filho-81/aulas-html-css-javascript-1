@@ -28,6 +28,7 @@ frm.addEventListener("submit", (e) => {
       ((ladoB + ladoC) == ladoA)) {
       // exibe não pode ser um triângulo
       resp1.innerText = `Os lados (${ladoA}, ${ladoB} e ${ladoC}) não podem ser um triângulo.`;
+      resp2.innerText = "Tipo de triângulo.";
       
    } else { // se não
       // exibe pode ser um triângulo
@@ -36,9 +37,9 @@ frm.addEventListener("submit", (e) => {
       // TIPO DE Um TRIÂNGULO COm BASE NOS SEUS LADOS
       if(ladoA == ladoB && ladoB == ladoC) {
          resp2.innerText = "É um triângulo EQUILÁTERO, porque, todos os lados são iguais.";
-      } else if((ladoA == ladoB && ladoB != ladoC) || 
-               (ladoA != ladoB && ladoB == ladoC) ||
-               (ladoA == ladoC) && (ladoA != ladoB)) {
+      } else if((ladoA == ladoB && ladoB != ladoC) ||
+               (ladoA == ladoC && ladoB != ladoA) ||
+               (ladoB == ladoC && ladoA != ladoC)) {
          // exeba
          resp2.innerText = "É um triângulo ISÓSCELES, porque, possui dois lados iguais e um diferente.";
       } else if(ladoA != ladoB && ladoB != ladoC) {

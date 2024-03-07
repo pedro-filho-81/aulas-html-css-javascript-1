@@ -1,53 +1,47 @@
+/* Estiliza o corpo da página quando atingir a largura de 800 pixel */
+@media screen and (min-width: 800px) {
 
-@media screen and (min-width: 800px) { 
+      body { /* no corpo da página */
+            border-left: 4px solid #f9f9f9;
+            border-right: 4px solid #f9f9f9;
+            padding: 1rem 2rem;
+      }
 
-   body { 
-      border-left: 4px solid #f9f9f9; 
-      border-right: 4px solid #f9f9f9; 
-      padding: 1rem 2rem; 
-   } 
+      .introWarapper {
+            display: flex;
+            gap: 0 20px;
+            flex: 1 1 auto;
+            align-items: center;
+      }
 
-      /* estilizando a imagem para 100% do tamanho da página. */
-   img { 
+      .MoneyShot,
+      .IntroText {
+            margin: 0;
+            flex: 1 1 50%;
+      }
+
+      .MoneyShotImg {
+            filter: drop-shadow(0 0 20px #0008);
+            border: 0;
+      }
+
+      .Ingredients {
+            font-size: 0.9rem;
+            float: right;
+            padding: 1rem;
+            margin: 0 0 0.5rem 1rem;
+            border-radius: 3px;
+            background-color: #ffffdf;
+            border: 9px solid #debb71;
+      }
+
+      .Ingredients h3 {
+            margin: 0;
+      }
+} /* fim @media 800px */
+
+/* estilizando a imagem para 100% do tamanho da página. */
+img { 
       /* largura máxima é 100% da largura da página */
-      max-width: 80%; 
-   }
-
-   .IntroWrapper { 
-      display: flex; 
-      gap: 0 20px; 
-      flex: 1 1 auto; 
-      align-items: center; 
-   } 
-
-   .MoneyShot, 
-   .IntroText { 
-      margin: 0; 
-      flex: 1 1 50%; 
-   } 
-
-   .MoneyShotImg { 
-      filter: drop-shadow(0 0 20px #0008); 
-      border: 0; 
-   } 
-
-   .IntroText { 
-      padding: 0.5rem; 
-      font-size: 2.5rem; 
-      text-align: left; 
-      position: relative; 
-   } 
-   .Ingredients { 
-      font-size: 0.9rem; 
-      float: right; 
-      padding: 1rem; 
-      margin: 0 0 0.5rem 1rem; 
-      border-radius: 3px; 
-      background-color: #ffffdf; 
-      border: 9px solid #debb71; 
-   } 
-
-   .Ingredients h3 { 
-      margin: 0; 
-   } 
+      max-width: 100%; /* ou seja, independente do tamanho da tela a imagem se adapta a ela */
 }
