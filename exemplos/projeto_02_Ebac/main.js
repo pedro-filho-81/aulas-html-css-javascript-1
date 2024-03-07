@@ -3,7 +3,7 @@
 const form = document.getElementById("form-atividade");
 
 // cria arrys
-const atividades = []; // cria um array vazio para armazenar os nomes das atividade informadas pelo usuário
+const atividades = []; // cria um array vazio para armazenar os   nomes das atividade informadas pelo usuário
 const notas = []; // cria um array vazio para armazenar as notas informadas pelo usuário.
 
 // vincula a variável imgAprovado ao arquivo imagens e à imagem aprovado.png
@@ -39,7 +39,7 @@ function adicionaLinha()
 
    if(atividades.includes(inputNomeAtividade.value)) {
       alert(`A atividade: ${inputNomeAtividade.value} já foi inserida.`);
-   } else {
+      } else {
 
       // array atividades recebe as strings digitadas pelo usuário no campo inputNomeAtividade
       atividades.push(inputNomeAtividade.value); 
