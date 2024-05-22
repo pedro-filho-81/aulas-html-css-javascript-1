@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Agenda De Contatos</title>
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   <header>
+      <h1>Programa Agenda de Contatos</h1>
+   </header>
+
+   <main>
+      <!-- QUESTIONÁRIO EBAC
+      <section class="questionario">
+         <h2>Questionário</h2>
+         <p>
+            Na tarefa deste módulo, você irá criar uma aplicação de agenda de contatos.
+
+            <br>1) Construa uma tabela com duas colunas:
+            <br>nome
+            <br>telefone
+
+            <br>2) Construa um formulário no qual o usuário irá inserir o nome e telefone do contato e, ao clicar em cadastrar, uma linha será adicionada na tabela de contatos.
+
+            <br>3) Publique a aplicação na Vercel. Para isso será necessário criar um repositório no Github e alimentá-lo com o código do projeto;
+
+            <br>4) Cole na plataforma o link do projeto publicado na Vercel.
+         </p>
+      </section>
+      -->
+
+      <section id="formulario">
+         <img src="./img/agenda-02.png" alt="Imagem de uma Agenda">
+         <form action="#">
+            <fieldset>
+               <legend>Agenda De Contatos</legend>
+
+               <label for="inpNome">Nome:
+                  <input type="text" id="inpNome" name="inpNome" autofocus required>
+               </label>
+            
+               <br><label for="inpTelefone">Telefone:
+                  <input type="tel" id="inpTelefone" placeholder="71-9-9984-5901" 
+                  pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}" required>
+               </label>
+               
+               <br><button type="submit" id="botao">Cadastrar</button><br>
+               <small>Formato telefone: 71-9-9984-5901</small>
+            </fieldset>
+         </form>
+      </section>
+
+      <section class="resultado">
+         <h2>Cadastrados</h2>
+         <table cellspacing="0">
+            <thead>
+               <tr>
+                  <th>
+                     Nome Do Cliente
+                  </th>
+                  <th>
+                     Nº do Telefone
+                  </th>
+               </tr>
+            </thead>
+
+            <tbody><!--corpo da tabela-->
+
+            </tbody>
+
+            <tfoot><!--Rodapé da tabela-->
+               
+            </tfoot>
+         </table>
+      </section>
+   </main>
+
+   <footer>
+      &copy; Curso EBAC Engenheiro FrontEnd
+   </footer>
+
+   <!--Vincula JavaScript com o Html-->
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>

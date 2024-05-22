@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Loop For In</title>
+   <style>
+      pre {
+         font-size: 30px;
+      }
+   </style>
+</head>
+<body>
+   <h1>Loop For In</h1>
+   <h2>Exemplo JavaScript</h2>
+   <pre>
+      // cria o objeto carro
+      let Carro = {
+         marca: "Renault",
+         modelo: "Logan",
+         comprimento: "4.250mm",
+         largura: "1.735mm",
+         altura: "1.525mm"
+      };
+      // variável
+      let mensagem = "", k;
+      
+      // loop for in pelo objeto carro
+      for(k in Carro) {
+         // atribui valores a mensagem
+         // k = propriedade
+         // Carro[k] = valor da propriedade
+         mensagem += k + "; " + Carro[k] + "\n"; // \n = pula linha;
+      } // final for in
+      
+      // mostra o conteúdo da mensagem
+      alert(mensagem);
+   </pre>
+   <script src="./loop-for/loop_for_in.js"></script>
+</body>
+</html>

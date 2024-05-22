@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Switch JavaScript</title>
+   <style>
+      pre {
+         font-size: 25px;
+      }
+   </style>
+
+</head>
+<body>
+   <h1>Switch JavaScript</h1>
+   
+   <h2>Exemplo JavaScript</h2>
+
+   <pre>
+   let estadoDoSul = prompt("Digite a sigla de um Estado da região sul: ");
+
+   switch(estadoDoSul) {
+      case "RS":
+      case "Rs":
+      case "rs":
+         alert("Rio Grande Do Sul");
+         break;
+
+      case "SC":
+      case "Sc":
+      case "sc":
+         alert("Santa Catarina");
+         break;
+
+      case "PR": 
+      case "Pr": 
+      case "pr": 
+         alert("Paraná");
+         break;
+
+      default: 
+         alert("Errado! Esse não é um Estado do Região Sul.");
+   }
+   </pre>
+   <script>
+      let estadoDoSul = prompt("Digite a sigla de um Estado da região sul: ");
+
+      switch(estadoDoSul) {
+         case "RS":
+         case "Rs":
+         case "rs":
+            alert("Rio Grande Do Sul");
+            break;
+
+         case "SC":
+         case "Sc":
+         case "sc":
+            alert("Santa Catarina");
+            break;
+
+         case "PR": 
+         case "Pr": 
+         case "pr": 
+            alert("Paraná");
+            break;
+
+         default: 
+            alert("Errado! Esse não é um Estado do Região Sul.");
+      }
+   </script>
+</body>
+</html>
