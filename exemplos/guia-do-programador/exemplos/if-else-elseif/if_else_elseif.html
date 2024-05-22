@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>If If else if elseif</title>
+   <style>
+      pre {
+         font-size: 30px;
+      }
+   </style>
+</head>
+<body>
+   <h1>if if-else if-elseif-else</h1>
+   <h2>Exemplo JavaScript</h2>
+   <pre>
+   let idade = prompt("Qual a sua idade?")
+   // condição
+   if(idade <= 11) {
+      alert("Você é uma criança.");
+   } else if(idade > 11 && idade <= 14) {
+      alert("Você é pré-adolecente.");
+   } else if(idade > 14 && idade < 21) {
+      alert("Você é adolecente.");
+   } else if(idade > 21 && idade < 60) {
+      alert("Você é um adulto.");
+   } else {
+      alert("Você é idoso.")
+   }
+   </pre>
+   <script>
+      let idade = prompt("Qual a sua idade? ");
+      // condição
+      if(idade <= 11) {
+         alert("Você é uma criança.");
+      } else if(idade > 11 && idade <= 14) {
+         alert("Você é pré-adolecente.");
+      } else if(idade > 14 && idade < 21) {
+         alert("Você é adolecente.");
+      } else if(idade >= 21 && idade < 60) {
+         alert("Você é um adulto.");
+      } else {
+         alert("Você é idoso.");
+      }
+   </script>
+</body>
+</html>
