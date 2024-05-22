@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exceções Try Catch Finally</title>
+   <style>
+      pre {
+         font-size: 30px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Exceções Try Catch Finally</h1>
+   </header>
+
+   <main>
+      <h2>Exemplo JavaScript</h2>
+
+      <pre>
+      try {
+         // declara a variável u como comentário
+         // let u = 5;
+      
+         // declara variável x que recebe u
+         let x = u; // variável u foi declarada como comentário, 
+         por isso vai gerar um erro
+      
+         // declara variável y que recebe a soma de x mais 2
+         let y = x + 2;
+         // exibe o resultado de y
+         // exibe o valor da variável y
+         alert(y);
+      } catch (e) {
+         alert(e.message + "\n" + e.name + "\n" + 
+         e.toString());
+         7. };
+      </pre>
+   </main>
+
+   <footer>
+      &copy; Guia do Programador JavaScript
+   </footer>
+   
+   <script src="excecoes.js"></script>
+
+</body>
+</html>
